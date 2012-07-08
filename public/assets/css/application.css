@@ -820,6 +820,7 @@ article p {
   font-family: times, georgia, serif;
   margin-bottom: 10px;
   color: #4d4d4d;
+  text-align: justify;
 }
 
 ul.action_list {
