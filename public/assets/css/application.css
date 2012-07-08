@@ -805,6 +805,11 @@ aside#left_sidebar a:hover {
   text-decoration: underline;
 }
 
+.sidebar_links a.sub_tab {
+  padding-left: 10px;
+  font-size: 13px !important;
+}
+
 .content_wrapper {
   padding: 15px 20px;
 }
