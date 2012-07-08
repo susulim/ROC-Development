@@ -829,16 +829,27 @@ ul.action_list {
   font-family: helvetica neue, sans-serif;
   color: #fff;
   font-weight: 200;
-  text-shadow: 0 -1px #000;
 }
 
 ul.action_list li {
   padding-left: 24px;
   margin-bottom: 8px;
+  background: url(../images/icon-actions.png) no-repeat;
+}
+
+ul.action_list li.email {
+  background-position: 0 -31px;
+}
+
+ul.action_list li.contact {
+  background-position: 0 -62px;
 }
 
 ul.action_list li a {
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px #000;
 }
 
 ul.action_list li a:hover {
