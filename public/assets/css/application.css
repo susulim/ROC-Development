@@ -545,6 +545,7 @@ header .container {
   position: absolute;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-left: -48px;
 }
 
 .logo img{
