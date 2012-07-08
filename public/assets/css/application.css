@@ -827,6 +827,15 @@ article h1 {
   margin-bottom: 10px;
 }
 
+article a {
+  text-decoration: none;
+  color: #003b76;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
 article p {
   font-size: 15px;
   font-family: times, georgia, serif;
