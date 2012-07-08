@@ -810,6 +810,13 @@ aside#left_sidebar a:hover {
   font-size: 13px !important;
 }
 
+.sidebar_links a.sub_tab_main {
+  color: #003b76 !important;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 13px !important;
+}
+
 .content_wrapper {
   padding: 15px 20px;
 }
