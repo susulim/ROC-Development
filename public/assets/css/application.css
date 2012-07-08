@@ -782,6 +782,34 @@ article {
   width: 60%;
 }
 
+table {
+  width: 100%;
+}
+
+table.team_list a img {
+  display: none;
+}
+
+table.team_list a:hover img {
+  display: block;
+}
+
+.label_row {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  font-size: 13px;
+}
+
+.odd {
+  font-size: 13px;
+  background-color: #f2f2f2;
+}
+
+.even {
+  font-size: 13px;
+}
+
 aside#right_sidebar {
   float: right;
 }
