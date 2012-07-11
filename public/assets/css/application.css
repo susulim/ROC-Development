@@ -860,6 +860,7 @@ aside#left_sidebar, article {
 
 aside#left_sidebar {
   width: 20%;
+  position: relative;
 }
 
 .sidebar_links {
@@ -872,6 +873,8 @@ aside .sidebar_border {
   height: 400px;
   background: #000;
   float: right;
+  position: absolute;
+  right: 0;
   background: #cccccc; /* Old browsers */
   background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 77%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(77%,#ffffff)); /* Chrome,Safari4+ */
