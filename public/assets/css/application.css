@@ -991,3 +991,13 @@ ul .inner_list {
   padding-left: 25px;
 }
 
+.relative_cage {
+  position: relative;
+}
+
+.team_list td img {
+  position: absolute;
+  top: 0;
+  left: -170px;
+}
+
