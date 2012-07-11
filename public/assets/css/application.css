@@ -558,11 +558,12 @@ h1, h2, h3, h4, h5, p {
   border: 1px solid #232323;
   outline: none;
   color: #262626;
-  background: url(../images/icon-glass.png) no-repeat #fff;
+  background: url(../images/icon-glass.png) no-repeat rgba(255,255,255,0.9);
   background-position: 5px 5px;
   font-size: 12px;
   font-weight: 200;
   padding: 5px 10px 5px 25px;
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.4);
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -574,6 +575,7 @@ h1, h2, h3, h4, h5, p {
 
 #home_search_input:focus {
   width: 200px;
+  background-color: #fff;
 }
 
 /* Header */
