@@ -955,3 +955,8 @@ ul.bio_list {
   width: 88px;
   height: 106px;
 }
+
+ul .inner_list {
+  padding-left: 25px;
+}
+
