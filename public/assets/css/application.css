@@ -1049,3 +1049,13 @@ ul .inner_list {
   left: -170px;
 }
 
+/* philantropy page */
+
+
+ul.philantropy li {
+  padding: 10px 0;
+}
+
+ul.philantropy img {
+  padding: 10px 0;
+}
