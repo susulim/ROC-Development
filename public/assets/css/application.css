@@ -1099,3 +1099,32 @@ ul.philantropy li {
 ul.philantropy img {
   padding: 10px 0;
 }
+
+/* contact us */
+
+.contact_table td {
+  vertical-align: top;
+  padding-right: 30px;
+  width: 33%;
+}
+
+.office_box h4 {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: times, times new roman,serif;
+  margin-bottom: 5px;
+}
+
+.office_box p, .person_box p {
+  font-size: 13px;
+  margin: 0;
+  text-align: left;
+}
+
+.person_box {
+  margin-top: 10px;
+}
+
+.office_box { 
+  height: 120px;
+}
