@@ -582,18 +582,24 @@ h1, h2, h3, h4, h5, p {
 /* Home slider */
 #home_slider {
   position: relative;
+  height: 500px;
+  width: 100%;
+  max-width: 1290px;
+  overflow: hidden;
+  margin: 0 auto 20px;
 }
 
 #home_slider,
 #home_slider .slides_container,
-#home_slider .slide,
-#home_slider .slide img {
+#home_slider .slide {
   display: block;
-  width: 100%;
+  width: 100% !important;
+  height: 500px;
 }
 
-#home_slider .slide img {
-  min-height: 500px;
+img.slide_image {
+  position: absolute;
+  z-index: 0;
 }
 
 #home_slider .slides_container {
@@ -688,13 +694,6 @@ nav a{
 }
 
 /* main */
-
-#home_slider {
-  width: 100%;
-  height: 500px;
-  background: url(../images/slide-1.png) no-repeat;
-  margin-bottom: 20px;
-}
 
 .intro_cage {
   width: 940px;
