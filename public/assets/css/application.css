@@ -906,5 +906,52 @@ ul.action_list li a:hover {
   text-decoration: underline;
 }
 
+/* team page */
 
+.team {
+  padding-bottom: 30px;
+  margin-top: -5px;
+  font-size: 30px;
+  font-weight: normal;
+}
 
+.individual {
+  margin-bottom: 20px;
+}
+
+.individual .left_column {
+  display: inline-block;
+  width: 100px !important;
+  vertical-align: middle;
+}
+
+.individual .right_column {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.individual_info a {
+  display: inline-block;
+}
+
+.individual_info p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.bio_list li {
+  font-size: 15px;
+  color: #4d4d4d;
+  font-family: times, georgia, serif;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+ul.bio_list {
+  padding-left: 20px !important;
+}
+
+.left_column img {
+  width: 88px;
+  height: 106px;
+}
