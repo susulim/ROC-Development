@@ -554,7 +554,8 @@ h1, h2, h3, h4, h5, p {
   right: 0;
 }
 
-#home_search_input {
+#home_search_input,
+#page_search_cage input {
   width: 130px;
   border: 1px solid #232323;
   outline: none;
@@ -574,7 +575,8 @@ h1, h2, h3, h4, h5, p {
   transition: width 0.1s;
 }
 
-#home_search_input:focus {
+#home_search_input:focus,
+#page_search_cage input:focus {
   width: 200px;
   background-color: #fff;
 }
@@ -719,7 +721,7 @@ nav {
   padding-top: 6px;
 }
 
-nav a{
+nav a {
   font-size: 12px;
   text-decoration: none;
   padding-bottom: 10px;
