@@ -549,8 +549,9 @@ h1, h2, h3, h4, h5, p {
 
 /* Searchbox */
 #home_search_cage {
-  float: right;
-  padding-top: 85px;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
 }
 
 #home_search_input {
@@ -578,6 +579,54 @@ h1, h2, h3, h4, h5, p {
   background-color: #fff;
 }
 
+/* Home slider */
+#home_slider {
+  position: relative;
+}
+
+#home_slider,
+#home_slider .slides_container,
+#home_slider .slide,
+#home_slider .slide img {
+  display: block;
+  width: 100%;
+}
+
+#home_slider .slide img {
+  min-height: 500px;
+}
+
+#home_slider .slides_container {
+  position: absolute;
+  top: 0;
+}
+
+ul.home_slider_pagination {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.home_slider_pagination li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul.home_slider_pagination li a img {
+  width: 68px;
+  -webkit-transition: width 0.1s;
+  -moz-transition: width 0.1s;
+  -o-transition: width 0.1s;
+  transition: width 0.1s;
+}
+
+ul.home_slider_pagination li.current a img,
+ul.home_slider_pagination li:hover a img {
+  width: 75px;
+}
+
 /* Header */
 
 header {
@@ -586,7 +635,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 9999999;
   background-color: rgba(255,255,255,0.75);
   padding-bottom: 13px;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.6);
