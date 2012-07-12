@@ -955,6 +955,10 @@ aside#left_sidebar a:hover {
   text-decoration: underline;
 }
 
+aside#right_sidebar a {
+  font-family: times, georgia, serif;
+}
+
 .sidebar_links a.sub_tab {
   padding-left: 10px;
   font-size: 13px !important;
@@ -1126,8 +1130,13 @@ ul.philantropy img {
 
 .person_box {
   margin-top: 10px;
+  margin-bottom:15px;
 }
 
 .office_box { 
-  height: 120px;
+  margin-bottom: 25px;
+}
+
+.office_box.last {
+  margin-top: 55px;
 }
