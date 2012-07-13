@@ -1140,3 +1140,22 @@ ul.philantropy img {
 .office_box.last {
   margin-top: 55px;
 }
+
+/* Current Portfolio Page */
+.return_link {
+  cursor: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 15px;
+  overflow-x: visible;
+  overflow-y: visible;
+  position: static;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content_return_link {
+  color: #999;
+  text-decoration: none;
+}
