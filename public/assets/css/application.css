@@ -776,13 +776,20 @@ nav a {
 footer {
   text-align: center;
   background: url(../images/footer-line.png) no-repeat top center;
-  padding: 20px 0 15px;
+  padding: 25px 0 15px;
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 11px;
 }
 
 footer a {
   text-decoration: none;
   color: #c7c7c7;
   font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Page */
