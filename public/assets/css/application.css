@@ -1182,4 +1182,12 @@ ul.philantropy img {
   margin-bottom: 10px;
 }
 
+#map_canvas {
+  width: 524px;
+  height: 250px;
+}
+
+.hidden {
+  display: none;
+}
 
