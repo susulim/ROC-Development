@@ -7,6 +7,7 @@ $(document).ready(function() {
     currentClass: 'current',
     pause: 0,
     hoverPause: false,
-    generateNextPrev: false
+    generateNextPrev: false,
+    slideSpeed: 1000
   });
 });
