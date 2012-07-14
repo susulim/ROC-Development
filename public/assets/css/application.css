@@ -752,14 +752,14 @@ nav a {
   height: 150px;
 }
 
-.info_cage h2 {
+.info_cage h2, .legal_wrapper h2 {
   font-size: 18px;
   font-family: times, times new roman, serif;
   color: #003B76;
   margin: 10px 0;
 }
 
-.info_cage p {
+.info_cage p, .legal_wrapper p {
   font-size: 12px;
   line-height: 1.3em;
   text-align: justify;
@@ -982,7 +982,7 @@ aside#right_sidebar a {
   padding: 15px 20px;
 }
 
-article h1 {
+article h1, .legal_wrapper h1 {
   font-size: 21px;
   font-family: times, georgia, serif;
   margin-bottom: 10px;
@@ -1166,3 +1166,19 @@ ul.philantropy img {
   color: #999;
   text-decoration: none;
 }
+
+/*  Legal Page  */
+.legal_wrapper {
+  padding-top: 80px;
+}
+
+.legal_wrapper h2 {
+  color: #565656;
+  margin: 25px 0 5px;
+}
+
+.legal_wrapper p {
+  line-height: 1.6em;
+}
+
+
