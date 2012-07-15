@@ -1109,10 +1109,17 @@ ul .inner_list {
   position: relative;
 }
 
-.team_list td img {
+.team_list td.relative_cage img {
   position: absolute;
   top: 0;
-  left: -170px;
+  left: -130px;
+  margin-top: -55px;
+  padding: 4px;
+  background: #fcfcfc;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 1px 1px 0 #ccc;
+  -moz-box-shadow: 0 1px 1px 0 #ccc;
+  box-shadow: 0 1px 1px 0 #ccc;
 }
 
 /* philantropy page */
