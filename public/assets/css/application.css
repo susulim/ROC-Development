@@ -919,6 +919,7 @@ table {
 
 table.team_list {
   font-size: 12px;
+  font-family: times, georgia, serif;
 }
 
 table.team_list th {
