@@ -913,6 +913,23 @@ article {
 
 table {
   width: 100%;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+table.team_list {
+  font-size: 12px;
+}
+
+table.team_list th {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+table.team_list td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 15px;
 }
 
 table.team_list a img {
@@ -927,16 +944,10 @@ table.team_list a:hover img {
   background-color: #000;
   color: #fff;
   text-align: left;
-  font-size: 13px;
 }
 
 .odd {
-  font-size: 13px;
   background-color: #f2f2f2;
-}
-
-.even {
-  font-size: 13px;
 }
 
 aside#right_sidebar {
