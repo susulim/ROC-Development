@@ -1110,6 +1110,18 @@ ul .inner_list {
   position: relative;
 }
 
+.team_list td.relative_cage .portfolio_thumb {
+  display: none;
+}
+
+.team_list tr:hover {
+  background: skyblue;
+}
+
+.team_list tr:hover td.relative_cage .portfolio_thumb {
+  display: block;
+}
+
 .team_list td.relative_cage img {
   position: absolute;
   top: 0;
