@@ -1073,6 +1073,7 @@ ul.action_list li a:hover {
 .individual .right_column {
   display: inline-block;
   vertical-align: middle;
+  width: 400px;
 }
 
 .individual_info a {
