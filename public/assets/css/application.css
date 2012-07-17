@@ -1244,3 +1244,7 @@ ul.philantropy img {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
+.summary_list li {
+  font-family: times, georgia, serif !important;
+}
