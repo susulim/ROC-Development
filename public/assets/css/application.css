@@ -1230,3 +1230,13 @@ ul.philantropy img {
   display: none;
 }
 
+.download_thumb {
+  padding: 15px 15px 0;
+}
+
+.download_thumb img {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
