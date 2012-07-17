@@ -10,4 +10,7 @@ $(document).ready(function() {
     generateNextPrev: false,
     slideSpeed: 1000
   });
+  
+  $(".team_list").stupidtable();
+  
 });

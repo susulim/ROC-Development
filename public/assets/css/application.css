@@ -1114,8 +1114,12 @@ ul .inner_list {
   display: none;
 }
 
-.team_list tr:hover {
+.team_list tbody tr:hover {
   background: skyblue;
+}
+
+.team_list th {
+  cursor: pointer;
 }
 
 .team_list tr:hover td.relative_cage .portfolio_thumb {
