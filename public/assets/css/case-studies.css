@@ -36,9 +36,14 @@ ul.studies_list li a:hover .learn_more {
   text-decoration: underline;
 }
 
+.case_study_banner {
+  height: 340px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
 .case_study_banner img {
   width: 100%;
-  margin-bottom: 10px;
 }
 
 .content_wrapper h5 {
