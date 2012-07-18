@@ -702,7 +702,7 @@ header .container {
 }
 
 nav {
-  float: right;
+  position: inline-block;
   padding-top: 31px;
 }
 
