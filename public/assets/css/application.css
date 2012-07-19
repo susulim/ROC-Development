@@ -916,7 +916,7 @@ aside#left_sidebar {
   padding: 15px;
 }
 
-aside .sidebar_border {
+#left_sidebar .sidebar_border {
   width: 1px;
   height: 400px;
   background: #000;
@@ -934,18 +934,11 @@ aside .sidebar_border {
   
 }
 
-aside#right_sidebar {
+#right_sidebar {
   width: 20%;
-  height: 400px;
-  background: #004285; /* Old browsers */
-  background: -moz-linear-gradient(top,  #004285 0%, #206cae 67%, #ffffff 99%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004285), color-stop(67%,#206cae), color-stop(99%,#ffffff)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #004285 0%,#206cae 67%,#ffffff 99%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #004285 0%,#206cae 67%,#ffffff 99%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #004285 0%,#206cae 67%,#ffffff 99%); /* IE10+ */
-  background: linear-gradient(to bottom,  #004285 0%,#206cae 67%,#ffffff 99%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004285', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-  
+  background: url(/assets/images/sidebar-gradient.png) repeat-x left bottom #155D9F;
+  padding-bottom: 115px;
+  min-height: 700px;
 }
 
 article {
@@ -992,11 +985,11 @@ table.team_list a:hover img {
   background-color: #f2f2f2;
 }
 
-aside#right_sidebar {
+#right_sidebar {
   float: right;
 }
 
-aside#left_sidebar a {
+#left_sidebar a {
   display: block;
   font-family: times, georgia, serif;
   text-decoration: none;
@@ -1006,17 +999,13 @@ aside#left_sidebar a {
   width: 155px;
 }
 
-aside#left_sidebar a.current {
+#left_sidebar a.current {
   color: #003b76;
   font-weight: bold;
 }
 
-aside#left_sidebar a:hover {
+#left_sidebar a:hover {
   text-decoration: underline;
-}
-
-aside#right_sidebar a {
-  font-family: times, georgia, serif;
 }
 
 .sidebar_links a.sub_tab {
@@ -1403,4 +1392,18 @@ ul.summary_list li:before {
   border-left: 2px solid #999;
 }
 
+/* portfolio */
+.portfolio_sidebar {
+  padding: 15px;
+}
 
+.portfolio_sidebar p {
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0 -1px black;
+}
+
+.portfolio_sidebar img {
+  width: 158px;
+  display: block;
+}
