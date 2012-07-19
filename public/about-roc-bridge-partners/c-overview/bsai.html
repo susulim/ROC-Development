@@ -3,7 +3,16 @@
 <head>
   <title>ROC | Bridge Partner</title>
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+  <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="assets/javascripts/print.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.email').click(function() {
+        var loc = window.location.host
+        window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/c-overview/bsai"
+      });
+    });
+  </script>
 </head>
 
 <body class="page">
@@ -62,7 +71,7 @@
           <aside id="right_sidebar">
             <ul class="action_list">
               <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
-              <li class="email"><a href="mailto:don-roc-bridge.com">Email This Page</a></li>
+              <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../contact/contact-us">Contact Us</a></li>
             </ul>
           </aside>
