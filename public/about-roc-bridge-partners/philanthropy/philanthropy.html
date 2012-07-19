@@ -3,7 +3,15 @@
 <head>
   <title>ROC | Bridge Partner</title>
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
-  <script type="text/javascript" src="assets/javascripts/print.js"></script>
+  <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.email').click(function() {
+        var loc = window.location.host
+        window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/philanthropy/philanthropy"
+      });
+    });
+  </script>
 </head>
 
 <body class="page">
@@ -14,13 +22,39 @@
           <a href="/"><img src="../../assets/images/logo.png" /></a>
         </div><!-- /.logo -->
         <nav>
-          <a href="../../investment-management/overview"><b>Investment Management</b></a>
-          <a href="../../property-management/overview"><b>Properties</b></a>
-          <a href="../about-roc-bridge-partners/company-overview"><b>About ROC|Bridge Partners</b></a>
-          <a href=""><b>News & Updates</b></a>
-          <a href="/about-roc-bridge-partners/contact/contact-us"><b>Contact Us</b></a>
+          <span class="header_link">
+            <b>Investment Management</b>
+            <div class="dropmenu">
+              <a href="/investment-management/overview">Overview</a>
+              <a href="/investment-management/mission">Mission</a>
+              <a href="/investment-management/the-opportunity">The Opportunity</a>
+              <a href="/investment-management/case-studies">Case Studies</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Properties</b>
+            <div class="dropmenu">
+              <a href="/property-management/overview">Overview</a>
+              <a href="/property-management/portfolio">Current Portfolio</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>About ROC|Bridge Partners</b>
+            <div class="dropmenu">
+              <a href="/about-roc-bridge-partners/company-overview">Company Overview</a>
+              <a href="/about-roc-bridge-partners/senior-management">The Team</a>
+              <a href="philanthropy">Philanthropy</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          
+          <span class="header_link"><b>News & Updates</b></span>
+          <span class="header_link"><a href="/about-roc-bridge-partners/contact/contact-us"><b>Contact Us</b></a></span>
         </nav><!-- /nav -->
         <a href="/" id="investor_login_link">Home</a>
+
+        <div class="clearfix"></div>
+
+        <div id="home_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
       </div><!-- /.container -->
     </header>
 
@@ -68,7 +102,7 @@
           <aside id="right_sidebar">
             <ul class="action_list">
               <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
-              <li class="email"><a href="mailto:don-roc-bridge.com">Email This Page</a></li>
+              <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../contact/contact-us">Contact Us</a></li>
             </ul>
           </aside>
