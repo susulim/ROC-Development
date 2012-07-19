@@ -517,6 +517,7 @@ body, #wrapper {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: times, georgia, serif;
 }
 
 .container {
@@ -556,6 +557,7 @@ h1, h2, h3, h4, h5, p {
 
 #home_search_input,
 #page_search_cage input {
+  font-family: helvetica neue, arial, sans-serif;
   width: 130px;
   border: 1px solid #232323;
   outline: none;
@@ -673,13 +675,13 @@ ul.home_slider_pagination li:hover a img {
 
 header {
   position: fixed;
+  font-family: helvetica neue, arial, sans-serif;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999999;
   background-color: rgba(255,255,255,0.75);
-  padding-bottom: 13px;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.6);
   -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.6);
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.6);
@@ -697,13 +699,13 @@ header .container {
   margin-left: -48px;
 }
 
-.logo img{
+.logo img {
   display: block;
 }
 
 nav {
   display: inline-block;
-  padding-top: 31px;
+  padding-top: 38px;
 }
 
 #investor_login_link {
@@ -721,12 +723,51 @@ nav {
   padding-top: 6px;
 }
 
-nav a {
+span.header_link, span.header_link > a {
   font-size: 12px;
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-right: 10px;
   color: #003b76;
+  position: relative;
+  cursor: pointer;
+}
+
+span.header_link > a:hover {
+  color: #222;
+}
+
+.dropmenu {
+  position: absolute;
+  padding: 3px 0;
+  top: 18px;
+  left: 0;
+  background: #fff;
+  text-align: left;
+  display: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 4px 0 #868686;
+  -moz-box-shadow: 0 1px 4px 0 #868686;
+  box-shadow: 0 1px 4px 0 #868686;
+}
+
+span.header_link:hover .dropmenu {
+  display: block;
+}
+
+.dropmenu a {
+  display: block;
+  width: 140px;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: #666;
+}
+
+.dropmenu a:hover {
+  background: skyblue;
+  color: #fff;
 }
 
 /* main */
@@ -1248,3 +1289,118 @@ ul.philantropy img {
 .summary_list li {
   font-family: times, georgia, serif !important;
 }
+
+
+/* Case Studies */
+
+ul.studies_list {
+  margin: 25px 0;
+}
+
+ul.studies_list li {
+  display: inline-block;
+  width: 240px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+ul.studies_list li img {
+  width: 240px;
+  height: 161px;
+}
+
+ul.studies_list li .title {
+  color: #2d2d2d;
+  font-family: times, times new roman, serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+ul.studies_list .location {
+  color: #4D4D4D;
+  font-size: 12px;
+}
+
+ul.studies_list li a:hover {
+  text-decoration: none;
+}
+
+ul.studies_list li a:hover .learn_more {
+  text-decoration: underline;
+}
+
+.case_study_banner {
+  height: 340px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.case_study_banner img {
+  width: 100%;
+}
+
+.content_wrapper h5 {
+  margin-top: -5px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.content_wrapper h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+table.case_info_table {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+table.case_info_table td {
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+table.case_info_table td.label_column {
+  width: 130px;
+  color: #565656;
+}
+
+table.asset_summary {
+  font-size: 11px;
+  color: #4D4D4D;
+  margin-bottom: 15px;
+}
+
+table.asset_summary td {
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+ul.summary_list {
+  font-size: 13px;
+  color: #4d4d4d;
+  margin-bottom: 25px;
+  font-family: times, georgia, serif;
+}
+
+ul.summary_list li {
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+ul.summary_list li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  border: 2px solid transparent;
+  border-left: 2px solid #999;
+}
+
+
