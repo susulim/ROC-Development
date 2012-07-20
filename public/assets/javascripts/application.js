@@ -8,7 +8,10 @@ $(document).ready(function() {
     pause: 0,
     hoverPause: false,
     generateNextPrev: false,
-    slideSpeed: 1000
+    slideSpeed: 1000,
+    crossfade: true,
+    effect: 'fade',
+    fadeSpeed: 800
   });
   
   $(".team_list").stupidtable();
