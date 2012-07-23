@@ -302,6 +302,7 @@ span.header_link > a:hover {
   background: #fff;
   text-align: left;
   display: none;
+  z-index: 99999;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -316,7 +317,7 @@ span.header_link:hover .dropmenu {
 
 .dropmenu a {
   display: block;
-  width: 140px;
+  width: 120px;
   padding: 4px 10px;
   text-decoration: none;
   color: #666;
