@@ -738,6 +738,18 @@ ul .inner_list {
   margin-top: -45px;
 }
 
+/* service-providers page */
+
+ul.services li {
+  padding: 20px 0;
+  text-decoration: underline;
+}
+
+ul.services a {
+  color: #551A8B;
+}
+
+
 /* philantropy page */
 
 

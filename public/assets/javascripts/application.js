@@ -11,7 +11,8 @@ $(document).ready(function() {
     slideSpeed: 1000,
     crossfade: true,
     effect: 'fade',
-    fadeSpeed: 800
+    fadeSpeed: 800,
+    pause: 2500
   });
   
   $(".team_list").stupidtable();
