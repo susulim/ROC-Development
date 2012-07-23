@@ -752,13 +752,19 @@ ul.services a {
 
 /* philantropy page */
 
+.content_wrapper p {
+  text-decoration: underline;
+  font-size: 20px;
+  padding-top: 40px;
+  color: black;
+}
 
 ul.philantropy li {
   padding: 10px 0;
 }
 
 ul.philantropy img {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* contact us */
