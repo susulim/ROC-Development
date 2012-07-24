@@ -750,6 +750,66 @@ ul.services a {
   color: #551A8B;
 }
 
+/* news page */
+.asset_column {
+  width: 350px;
+  display: inline-block;
+}
+
+.asset_image {
+  display: inline-block;
+}
+
+.asset_column p {
+  font-size: 13px;
+  background-color: #C4D7E8;
+}
+
+.acquire_info {
+  margin-bottom: 0;
+}
+
+.acquire_info_left {
+  padding-right: 15px;
+}
+
+.acquire_info_title {
+  width: 42px;
+  padding-left: 15px;
+}
+
+ul.place_definition li {
+  font-size: 12px;
+  padding-left: 48px;
+}
+
+.percentage_table_title {
+  background-color: #4A4848;
+  color: white;
+  border: 2px solid white;
+}
+
+.percentage_table td {
+  background-color: #DDDDDD;
+  border: 2px solid white;
+}
+
+.percentage_table_result {
+  text-align: center;
+}
+
+.returns_result td {
+  text-align: center;
+  background-color: #DDDDDD;
+  border: 2px solid white;
+}
+
+.office_info td {
+  background-color: #013366;
+  color: white;
+  border: 2px solid white;
+  padding-bottom: 10px;
+}
 
 /* philantropy page */
 
