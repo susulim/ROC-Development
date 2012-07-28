@@ -544,6 +544,14 @@ table.team_list a:hover img {
   text-align: left;
 }
 
+.label_row .size_specified {
+  width: 208px;
+}
+
+.label_row .width_modified {
+  width: 115px;
+}
+
 .odd {
   background-color: #f2f2f2;
 }
@@ -1048,6 +1056,13 @@ ul.summary_list li:before {
   width: 158px;
   display: block;
 }
+
+/* monetized properties */
+.content_wrapper span {
+  padding-top: 35px;
+  color: #2D06B9;
+}
+
 
 @media only screen and (min-width: 35em) {
   
