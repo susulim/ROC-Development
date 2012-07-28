@@ -10,10 +10,13 @@
   height: 32px;
   position: absolute;
   cursor: pointer;
+  z-index: 1;
+  background: url(/assets/images/map-anchor.png) no-repeat;
 }
 
 #map_wrapper .map_anchor:hover {
   margin-top: 1px;
+  z-index: 2;
 }
 
 .map_anchor .thumb_caption {
@@ -74,4 +77,54 @@
 .map_anchor.seatle {
   top: 6px;
   left: 57px;
+}
+
+.map_anchor.fresno {
+  top: 148px;
+  left: 50px;
+}
+
+.map_anchor.salt_lake {
+  top: 108px;
+  left: 115px;
+}
+
+.map_anchor.casa_grande {
+  top: 200px;
+  left: 106px;
+}
+
+.map_anchor.tucson {
+  top: 210px;
+  left: 122px;
+}
+
+.map_anchor.albuquerque {
+  top: 178px;
+  left: 160px;
+}
+
+.map_anchor.denver {
+  top: 127px;
+  left: 186px;
+}
+
+.map_anchor.dallas {
+  top: 218px;
+  left: 253px;
+}
+
+.map_anchor.houston {
+  top: 251px;
+  left: 267px;
+}
+
+.map_anchor.topeka {
+  top: 138px;
+  left: 260px;
+}
+
+.map_anchor.bloomington {
+  top: 125px;
+  left: 325px;
 }
