@@ -302,6 +302,7 @@ span.header_link > a:hover {
   background: #fff;
   text-align: left;
   display: none;
+  z-index: 99999;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -316,7 +317,7 @@ span.header_link:hover .dropmenu {
 
 .dropmenu a {
   display: block;
-  width: 140px;
+  width: 120px;
   padding: 4px 10px;
   text-decoration: none;
   color: #666;
@@ -543,6 +544,14 @@ table.team_list a:hover img {
   text-align: left;
 }
 
+.label_row .size_specified {
+  width: 208px;
+}
+
+.label_row .width_modified {
+  width: 115px;
+}
+
 .odd {
   background-color: #f2f2f2;
 }
@@ -738,15 +747,93 @@ ul .inner_list {
   margin-top: -45px;
 }
 
+/* service-providers page */
+
+ul.services li {
+  padding: 20px 0;
+  text-decoration: underline;
+}
+
+ul.services a {
+  color: #551A8B;
+}
+
+/* news page */
+.asset_column {
+  width: 350px;
+  display: inline-block;
+}
+
+.asset_image {
+  display: inline-block;
+}
+
+.asset_column p {
+  font-size: 13px;
+  background-color: #C4D7E8;
+}
+
+.acquire_info {
+  margin-bottom: 0;
+}
+
+.acquire_info_left {
+  padding-right: 15px;
+}
+
+.acquire_info_title {
+  width: 42px;
+  padding-left: 15px;
+}
+
+ul.place_definition li {
+  font-size: 12px;
+  padding-left: 48px;
+}
+
+.percentage_table_title {
+  background-color: #4A4848;
+  color: white;
+  border: 2px solid white;
+}
+
+.percentage_table td {
+  background-color: #DDDDDD;
+  border: 2px solid white;
+}
+
+.percentage_table_result {
+  text-align: center;
+}
+
+.returns_result td {
+  text-align: center;
+  background-color: #DDDDDD;
+  border: 2px solid white;
+}
+
+.office_info td {
+  background-color: #013366;
+  color: white;
+  border: 2px solid white;
+  padding-bottom: 10px;
+}
+
 /* philantropy page */
 
+.underline p {
+  text-decoration: underline;
+  font-size: 20px;
+  padding-top: 40px;
+  color: black;
+}
 
 ul.philantropy li {
   padding: 10px 0;
 }
 
 ul.philantropy img {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* contact us */
@@ -969,6 +1056,13 @@ ul.summary_list li:before {
   width: 158px;
   display: block;
 }
+
+/* monetized properties */
+.content_wrapper span {
+  padding-top: 35px;
+  color: #2D06B9;
+}
+
 
 @media only screen and (min-width: 35em) {
   
