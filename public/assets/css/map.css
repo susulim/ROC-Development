@@ -1,0 +1,77 @@
+#map_wrapper {
+  width: 522px;
+  height: 400px;
+  background: url(/assets/images/us-map.png) no-repeat;
+  position: relative;
+}
+
+#map_wrapper .map_anchor {
+  width: 24px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#map_wrapper .map_anchor:hover {
+  margin-top: 1px;
+}
+
+.map_anchor .thumb_caption {
+  width: 150px;
+  height: 100px;
+  background: url(/assets/images/bg-map-caption.png) no-repeat;
+  position: absolute;
+  left: -175px;
+  top: -48px;
+  padding: 9px 14px 10px 10px;
+  display: none;
+}
+
+.map_anchor:hover .thumb_caption {
+  display: block;
+}
+
+.thumb_caption img {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 100px;
+  display: block;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,0.7);
+  -moz-box-shadow: 0 1px 0 0 rgba(255,255,255,0.7);
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.7);
+}
+
+.thumb_caption .caption_name {
+  height: 28px;
+  width: 144px;
+  background: url(/assets/images/gradient-thumb-caption.png) repeat-x;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  left: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px rgba(0,0,0,0.8);
+  padding-top: 2px;
+  padding-left: 6px;
+  line-height: 1em;
+}
+
+.thumb_caption .caption_name span {
+  font-size: 10px;
+  font-family: arial;
+  letter-spacing: 0;
+  font-weight: 100;
+  text-shadow: none;
+  opacity: 0.95;
+}
+
+.map_anchor.seatle {
+  top: 6px;
+  left: 57px;
+}
