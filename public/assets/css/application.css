@@ -1073,12 +1073,6 @@ ul.summary_list li:before {
   display: block;
 }
 
-/* monetized properties */
-.content_wrapper span {
-  padding-top: 35px;
-  color: #2D06B9;
-}
-
 
 @media only screen and (min-width: 35em) {
   
