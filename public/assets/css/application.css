@@ -1,199 +1,199 @@
-/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* HTML5 Boilerplate  */
 
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
 
-/*
- * Corrects `block` display not defined in IE6/7/8/9 & FF3.
- */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-    display: block;
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* code starts here */
+
+/* General Resets */
+
+body, #wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: times, georgia, serif;
 }
 
-/*
- * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
- */
-
-audio,
-canvas,
-video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
-/*
- * Prevents modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS5 devices.
- */
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
+a, span {
+  display: inline-block;
 }
 
-/*
- * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
- * Known issue: no IE6 support.
- */
-
-[hidden] {
-    display: none;
+span {
+  vertical-align: top;
 }
 
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-
-/*
- * 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
- *    `em` units.
- * 2. Prevents iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
-html {
-    font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/*
- * Addresses `font-family` inconsistency between `textarea` and other form
- * elements.
- */
-
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0;
 }
 
-/*
- * Addresses margins handled incorrectly in IE6/7.
- */
-
-body {
-    margin: 0;
+.clearfix {
+  clear: both;
 }
 
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-/*
- * Addresses `outline` inconsistency between Chrome and other browsers.
- */
-
-a:focus {
-    outline: thin dotted;
+/* Searchbox */
+#home_search_cage {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
 }
 
-/*
- * Improves readability when focused and also mouse hovered in all browsers.
- * people.opera.com/patrickl/experiments/keyboard/test
- */
-
-a:active,
-a:hover {
-    outline: 0;
+#home_search_input,
+#page_search_cage input {
+  font-family: helvetica neue, arial, sans-serif;
+  width: 130px;
+  border: 1px solid #232323;
+  outline: none;
+  color: #262626;
+  background: url(../images/icon-glass.png) no-repeat rgba(255,255,255,0.9);
+  background-position: 5px 5px;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 5px 10px 5px 25px;
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.4);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-transition: width 0.1s;
+  -moz-transition: width 0.1s;
+  -o-transition: width 0.1s;
+  transition: width 0.1s;
 }
 
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
-
-/*
- * Addresses font sizes and margins set differently in IE6/7.
- * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
- */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+#home_search_input:focus,
+#page_search_cage input:focus {
+  width: 200px;
+  background-color: #fff;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+/* Home slider */
+#home_slider {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  max-width: 1290px;
+  overflow: hidden;
+  margin: 0 auto 20px;
 }
 
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+#home_slider,
+#home_slider .slides_container,
+#home_slider .slide {
+  display: block;
+  width: 100% !important;
+  height: 500px;
 }
 
-h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+img.slide_image {
+  position: absolute;
+  z-index: 0;
 }
 
-h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
+#home_slider .slides_container {
+  position: absolute;
+  top: 0;
 }
 
-h6 {
-    font-size: 0.75em;
-    margin: 2.33em 0;
+#home_slider .caption {
+  width: 940px;
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 100px;
+  z-index: 999;
 }
 
-/*
- * Addresses styling not present in IE7/8/9, S5, Chrome.
- */
-
-abbr[title] {
-    border-bottom: 1px dotted;
+#home_slider .caption.black h1 {
+  color: #003B76;
+  text-shadow: 0 1px #fff;
 }
 
-/*
- * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
- */
-
-b,
-strong {
-    font-weight: bold;
+#home_slider .caption.black p  {
+  color: #fff;
 }
 
-blockquote {
-    margin: 1em 40px;
+#home_slider .caption h1 {
+  font-family: times, times new roman, serif;
+  color: #fff;
+  text-shadow: 0 1px #03151E;
+  opacity: 0.9;
+  line-height: 1.2em;
+  padding-top: 5px;
+  font-size: 42px;
 }
-
-/*
- * Addresses styling not present in S5, Chrome.
- */
-
-dfn {
-    font-style: italic;
-}
-
-/*
- * Addresses styling not present in IE6/7/8/9.
- */
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-/*
 
 #home_slider .caption p {
   color: #fcfcfc;
@@ -1057,6 +1057,13 @@ ul.summary_list li:before {
   display: block;
 }
 
+/* monetized properties */
+.content_wrapper span {
+  padding-top: 35px;
+  color: #2D06B9;
+}
+
+
 @media only screen and (min-width: 35em) {
   
 
@@ -1085,42 +1092,4 @@ ul.summary_list li:before {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-/* philantropy page */
-
-
-ul.philantropy li {
-  padding: 10px 0;
-}
-
-ul.philantropy img {
-  padding: 10px 0;
-}
-
-/* contact us */
-
-.contact_table td {
-  vertical-align: top;
-  padding-right: 30px;
-  width: 33%;
-}
-
-.office_box h4 {
-  font-size: 14px;
-  font-weight: bold;
-  font-family: times, times new roman,serif;
-  margin-bottom: 5px;
-}
-
-.office_box p, .person_box p {
-  font-size: 13px;
-  margin: 0;
-  text-align: left;
-}
-
-.person_box {
-  margin-top: 10px;
-}
-
-.office_box { 
-  height: 120px;
 }
