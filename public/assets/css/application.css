@@ -855,6 +855,22 @@ ul.news_list li {
   line-height: 1.2em;
 }
 
+.news_meta {
+  font-size: 13px;
+  color: #666;
+}
+
+a.banner_link {
+  display: block;
+  text-align: center;
+  margin: 10px 0 25px;
+  font-size: 12px;
+}
+
+a.banner_link img.full {
+  width: 522px;
+}
+
 /* philantropy page */
 
 .underline p {
