@@ -53,7 +53,8 @@
   width: 144px;
   background: url(/assets/images/gradient-thumb-caption.png) repeat-x;
   color: #fff;
-  font-size: 12px;
+  font-size: 12px !important;
+  font-family: Times, Times New Roman, Serif !important;
   position: absolute;
   z-index: 2;
   top: 9px;
