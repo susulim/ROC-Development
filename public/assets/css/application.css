@@ -610,7 +610,7 @@ article a:hover {
   text-decoration: underline;
 }
 
-article p {
+article p, ul.news_list {
   font-size: 15px;
   font-family: times, georgia, serif;
   margin-bottom: 10px;
@@ -764,13 +764,26 @@ ul.services a {
   display: inline-block;
 }
 
+#cherry_news_image {
+  width: 150px;
+  padding-top: 40px;
+  float: right;
+}
+
+#cherry_news_image img {
+  width: 150px;
+}
+
 .asset_image {
   display: inline-block;
 }
 
-.asset_column p {
+p.news_highlight {
   font-size: 13px;
   background-color: #C4D7E8;
+  padding: 8px 10px;
+  text-shadow: 0 1px rgba(255,255,255,0.7);
+  border-radius: 3px;
 }
 
 .acquire_info {
@@ -817,6 +830,45 @@ ul.place_definition li {
   color: white;
   border: 2px solid white;
   padding-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 11px;
+}
+
+tr.personal_info td {
+  vertical-align: middle;
+  font-size: 11px;
+  padding-bottom: 10px;
+}
+
+tr.personal_info td.personal_image img {
+  width: 42px;
+}
+
+ul.news_list {
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+
+ul.news_list li {
+  margin-bottom: 8px;
+  line-height: 1.2em;
+}
+
+.news_meta {
+  font-size: 13px;
+  color: #666;
+}
+
+a.banner_link {
+  display: block;
+  text-align: center;
+  margin: 10px 0 25px;
+  font-size: 12px;
+}
+
+a.banner_link img.full {
+  width: 522px;
 }
 
 /* philantropy page */
@@ -1072,7 +1124,6 @@ ul.summary_list li:before {
   width: 158px;
   display: block;
 }
-
 
 @media only screen and (min-width: 35em) {
   
