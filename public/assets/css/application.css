@@ -610,7 +610,7 @@ article a:hover {
   text-decoration: underline;
 }
 
-article p {
+article p, ul.news_list {
   font-size: 15px;
   font-family: times, georgia, serif;
   margin-bottom: 10px;
@@ -843,6 +843,16 @@ tr.personal_info td {
 
 tr.personal_info td.personal_image img {
   width: 42px;
+}
+
+ul.news_list {
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+
+ul.news_list li {
+  margin-bottom: 8px;
+  line-height: 1.2em;
 }
 
 /* philantropy page */
