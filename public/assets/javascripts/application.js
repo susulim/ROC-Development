@@ -15,6 +15,9 @@ $(document).ready(function() {
     pause: 2500
   });
   
-  $(".team_list").stupidtable();
+  $("table#multifamily_table").stupidtable();
+  $("table#office_table").stupidtable();
+  $("table#other_table").stupidtable();
+  $("table#team_table").stupidtable();
   
 });
