@@ -269,15 +269,19 @@ nav {
   position: absolute;
   display: block;
   top: 0;
-  right: 0;
+  right: 6px;
   color: #000;
   font-size: 12px;
   text-decoration: none;
-  background: url(../images/login-button.png);
-  width: 166px;
-  height: 24px;
+  background: url(../images/home-button.png) no-repeat;
+  width: 90px;
+  height: 30px;
   text-align: center;
   padding-top: 6px;
+}
+
+#investor_login_link:hover {
+  top: 1px;
 }
 
 span.header_link, span.header_link > a {
