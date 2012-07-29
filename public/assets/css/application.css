@@ -889,6 +889,22 @@ ul.philantropy img {
   text-decoration: none;
 }
 
+.label_row_property {
+  width: 212px;
+}
+
+.label_row_city {
+  width: 132px;
+}
+
+.label_row_state {
+  width: 103px;
+}
+
+.label_row_units {
+  width: 67px;
+}
+
 /*  Legal Page  */
 .legal_wrapper {
   padding-top: 80px;
