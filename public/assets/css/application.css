@@ -403,6 +403,8 @@ body.page {
 
 #page_banner {
   width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
   height: 175px;
   padding-top: 85px;
   position: relative;
@@ -411,7 +413,7 @@ body.page {
 
 #page_banner img {
   min-height: 100%;
-  width: 100%;
+  width: 1290px;
   position: absolute;
   bottom: 0;
   left: 0;
