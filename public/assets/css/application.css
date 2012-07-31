@@ -894,6 +894,12 @@ ul.philantropy img {
   padding: 20px 0;
 }
 
+/* service-providers */
+.services img {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 /* contact us */
 
 .contact_table td {
