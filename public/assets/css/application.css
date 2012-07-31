@@ -961,6 +961,16 @@ ul.philantropy img {
   width: 67px;
 }
 
+.portfolio_image_thumbnails {
+  padding-top: 25px;
+}
+
+.portfolio_image_thumbnails img {
+  width: 48px;
+  height: 30px;
+  margin-bottom: 4px;
+}
+
 /*  Legal Page  */
 .legal_wrapper {
   padding-top: 80px;
