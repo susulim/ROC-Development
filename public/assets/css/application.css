@@ -658,6 +658,28 @@ ul.action_list li a:hover {
   text-decoration: underline;
 }
 
+/* Search page */
+.search_wrapper {
+  padding-top: 80px;
+}
+
+.search_wrapper h1 {
+  color: #565656;
+  margin-bottom: 25px;
+}
+
+.search_wrapper p {
+  font-size: 13px;
+}
+
+.search_wrapper a {
+  margin-top: 15px;
+}
+
+.search_link {
+  color: green;
+}
+
 /* team page */
 
 .team {
