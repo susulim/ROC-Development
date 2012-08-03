@@ -664,8 +664,12 @@ ul.action_list li a:hover {
 }
 
 .search_wrapper h1 {
-  color: #565656;
+  font-size: 23px;
+  color: #DD4B39;
   margin-bottom: 25px;
+  margin-top: 10px;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 20px;
 }
 
 .search_wrapper p {
