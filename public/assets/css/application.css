@@ -1173,6 +1173,39 @@ ul.summary_list li:before {
   display: block;
 }
 
+/* Search */
+.search_results_wrapper {
+  padding: 90px 0 35px;
+  min-height: 600px;
+}
+
+.search_results_wrapper h1 {
+  font-size: 18px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+
+.search_results {
+  padding-top: 15px;
+}
+
+.search_results a.search_result_link {
+  display: block;
+  margin-bottom: 15px;
+  color: #036;
+  text-decoration: none;
+}
+
+a.search_result_link:hover {
+  text-decoration: underline;
+}
+
+.no_result {
+  color: #868686;
+  font-size: 15px;
+  font-weight: normal;
+}
+
 @media only screen and (min-width: 35em) {
   
 
