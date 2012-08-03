@@ -276,6 +276,7 @@ nav {
   background: url(../images/home-button.png) no-repeat;
   width: 90px;
   height: 30px;
+  font-weight: bold;
   text-align: center;
   padding-top: 6px;
 }
