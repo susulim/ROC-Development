@@ -937,7 +937,10 @@ ul.philantropy img {
 .contact_table td {
   vertical-align: top;
   padding-right: 30px;
-  width: 33%;
+}
+
+.contact_table td.big_col {
+  width: 55%;
 }
 
 .office_box h4 {
