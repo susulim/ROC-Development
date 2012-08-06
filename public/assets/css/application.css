@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, p {
   clear: both;
 }
 
+.offset_bottom_10 {
+  margin-bottom: 8px !important;
+}
+
 /* Searchbox */
 #home_search_cage {
   position: absolute;
