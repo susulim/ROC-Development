@@ -1158,33 +1158,54 @@ table.asset_summary {
   margin-bottom: 15px;
 }
 
+table.asset_summary th {
+  text-align: left;
+  vertical-align: top;
+  font-size: 9px;
+  padding-bottom: 6px;
+}
+
 table.asset_summary td {
   padding-right: 15px;
   padding-bottom: 10px;
+  width: 25%;
+  vertical-align: middle;
+}
+
+table.asset_summary td.label_col {
+  width: 60px;
+  font-size: 9px;
+  line-height: 1.2em;
 }
 
 ul.summary_list {
-  font-size: 13px;
   color: #4d4d4d;
   margin-bottom: 25px;
   font-family: times, georgia, serif;
 }
 
 ul.summary_list li {
+  font-size: 15px;
   margin-bottom: 8px;
   padding-left: 15px;
   position: relative;
 }
 
-ul.summary_list li:before {
+table.case_info_table td ul li {
+  position: relative;
+  padding-left: 12px;
+}
+
+ul.summary_list li:before,
+table.case_info_table td ul li:before {
   content: "";
   width: 0;
   height: 0;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 2px;
-  border: 2px solid transparent;
-  border-left: 2px solid #999;
+  border: 3px solid transparent;
+  border-left: 3px solid #999;
 }
 
 /* portfolio */
