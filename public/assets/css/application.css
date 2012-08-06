@@ -1257,6 +1257,22 @@ a.search_result_link:hover {
   font-weight: normal;
 }
 
+.service_cage {
+  width: 50%;
+  float: left;
+  text-align: justify;
+}
+
+.service_cage.large {
+  width: 100%;
+}
+
+.service_cage img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 35em) {
   
 
