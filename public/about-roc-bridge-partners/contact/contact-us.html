@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
   <script type="text/javascript" src="/../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="/../assets/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.email').click(function() {
@@ -66,24 +67,16 @@
       <div id="page_banner">
         <div class="container">
           <img src="../../assets/images/banner-1.png" />
-          <div id="page_search_cage"><input type="text" placeholder="Search" /></div>
+          <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
       </div></!-- /#page_banner -->
 
       <div class="container page_content">
-        <div class="page_header">ABOUT ROC|BRIDGE PARTNERS</div><!-- /.page_title -->
+        <div class="page_header"></div><!-- /.page_title -->
         
         <div class="page_body">
           <aside id="left_sidebar">
             <div class="sidebar_links">
-              <a href="../company-overview">Company Overview</a>
-                <a href="../company-overview" class="sub_tab">ROC|Bridge</a>
-                <a href="../c-overview/bpm" class="sub_tab">BPM<a/>
-                <a href="../c-overview/bsai" class="sub_tab">BSAI</a>
-              <a href="../senior-management">The Team</a>
-              <a href="../service-providers/service">Service Providers</a>
-              <a href="../philanthropy/philanthropy">Philanthropy</a>
-            </div>
             <div class="sidebar_border"></div>
             <div class="clearfix"></div>
           </aside>
@@ -94,32 +87,38 @@
 
               <table class="contact_table">
                 <tr>
-                  <td>
+                  <td class="big_col">
                     <div class="office_box">
-                      <h4>Salt Lake City (Head Office)</h4>
+                      <h4><u>Salt Lake City (Head Office)</u></h4>
                       <p>5295 So. Commerce Dr.,<br /> Suite 100, Salt Lake City,<br />UT 84107</p>
                       <p>General Line: +1 (801) 716-4500</p>
                     </div><!-- /.office_box -->
                     <div class="person_box">
-                      <p><b>Donaldson Hartman</b></p>
-                      <a href=""><img src="../../assets/images/vcf-1.png" /></a>
-                      <a href="mailto:don@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      <p>
+                        <b>Donaldson Hartman</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:don@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
                       <p>Office : +1 (801) 716-4540</p>
-                      <p>Mobile : +1 (801) 520i9966</p>
+                      <p>Mobile : +1 (801) 5209966</p>
                       <p>Email : <a href ="mailto:don@roc-bridge.com">don@roc-bridge.com</a></p>
                     </div><!-- /.person_box -->
                     <div class="person_box">
-                      <p><b>Paul Hutchinson (Investor Relations)</b></p>
-                      <a href=""><img src="../../assets/images/vcf-1.png" /></a>
-                      <a href="mailto:paul@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      <p>
+                        <b>Paul Hutchinson (Investor Relations)</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:paul@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
                       <p>Office : +1 (801) 716-4554</p>
                       <p>Mobile : +1 (801) 514-5099</p>
                       <p>Email : <a href ="mailto:paul@roc-bridge.com">paul@roc-bridge.com</a></p>
                     </div><!-- /.person_box -->
                     <div class="person_box">
-                      <p><b>Kelley Hansen (Property Acquisition)</b></p>
-                      <a href=""><img src="../../assets/images/vcf-1.png" /></a>
-                      <a href="mailto:kelley@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      <p>
+                        <b>Kelley Hansen (Property Acquisition)</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:kelley@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
                       <p>Office : +1 (801) 716-4547 </p>
                       <p>Mobile : +1 (801) 631-3334</p>
                       <p>Email : <a href ="mailto:kelley@roc-bridge.com">kelley@roc-bridge.com</a></p>
@@ -127,28 +126,46 @@
                   </td>
                   <td>
                     <div class="office_box">
-                      <h4>New York</h4>
-                      <p>1000 Park Avenue, <br />Ste. 3 New York,<br />NY 10028  USA</p>
-                    </div><!-- /.office_box -->
-                    <div class="person_box">
-                      <p><b>Robert Morse</b></p>
-                      <a href=""><img src="../../assets/images/vcf-1.png" /></a>
-                      <a href="mailto:morse@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      <h4><u>New York</u></h4>
+
+                      <p>
+                        <b>Robert Morse</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:morse@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
                       <p>Office : +1 (212) 472-7767</p>
                       <p>Mobile : +1 (917) 488-2910</p>
                       <p>Email : <a href ="mailto:morse@roc-bridge.com">morse@roc-bridge.com</a></p>
-                    </div><!-- /.person_box -->
-                    <div class="office_box last">
-                      <h4>San Francisco (Metro)</h4>
-                      <p>520 S. El Camino Real, <br />Suite 330 San Mateo, <br />CA 94402 USA</p>
                     </div><!-- /.office_box -->
                     <div class="person_box">
-                      <p><b>Dean Allara<b></p>
-                      <a href=""><img src="../../assets/images/vcf-1.png" /></a>
-                      <a href="mailto:dean@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                    </div><!-- /.person_box -->
+
+                    <div class="office_box">
+                      <h4><u>San Francisco (Metro)</u></h4>
+                      <p>
+                        <b>Dean Allara</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:dean@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
                       <p>Office : +1 (650) 579-1350</p>
                       <p>Mobile : +1 (650) 207-1350</p>
                       <p>Email : <a href ="mailto:dean@roc-bridge.com">dean@roc-bridge.com</a></p>
+                    </div><!-- /.office_box -->
+                    <div class="person_box">
+                    </div><!-- /.person_box -->
+
+                    <div class="office_box">
+                      <h4><u>Hong Kong</u></h4>
+                      <p>
+                        <b>Winston Chiu</b>
+                        <a href=""><img src="../../assets/images/vcf-1.png" /></a>
+                        <a href="mailto:dean@roc-bridge.com"><img src="../../assets/images/vcf-2.png" /></a>
+                      </p>
+                      <p>Office : +1 (852) 2101-0608</p>
+                      <p>Mobile : +1 (852) 9227-6017</p>
+                      <p>Email : <a href ="mailto:chiu@roc-bridge.com">chiu@roc-bridge.com</a></p>
+                    </div><!-- /.office_box -->
+                    <div class="person_box">
                     </div><!-- /.person_box -->
                   </td>
                 </tr>
@@ -161,7 +178,6 @@
             <ul class="action_list">
               <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
-              <li class="contact"><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </aside>
           <div class="clearfix"></div>

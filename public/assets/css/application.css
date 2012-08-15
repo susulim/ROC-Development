@@ -74,6 +74,7 @@ body, #wrapper {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-weight: 600;
   font-family: times, georgia, serif;
 }
 
@@ -103,6 +104,10 @@ h1, h2, h3, h4, h5, p {
 
 .clearfix {
   clear: both;
+}
+
+.offset_bottom_10 {
+  margin-bottom: 8px !important;
 }
 
 /* Searchbox */
@@ -390,6 +395,7 @@ footer a {
   text-decoration: none;
   color: #c7c7c7;
   font-size: 12px;
+  padding-left: 10px;
 }
 
 footer a:hover {
@@ -442,7 +448,7 @@ body.page {
 .page_header {
   color: #fff;
   padding: 8px 15px;
-  font-size: 13px;
+  font-size: 21px;
   text-shadow: 0 -1px #183550;
   border: 1px solid #333;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
@@ -518,7 +524,7 @@ article {
 table {
   width: 100%;
   font-size: 13px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 table.team_list {
@@ -629,9 +635,8 @@ ul.action_list {
   padding: 15px;
   font-size: 13px;
   letter-spacing: 1px;
-  font-family: helvetica neue, sans-serif;
+  font-family: times, georgia, serif;
   color: #fff;
-  font-weight: 200;
 }
 
 ul.action_list li {
@@ -678,10 +683,11 @@ ul.action_list li a:hover {
 }
 
 .search_wrapper a {
+  color: #1122D5;
   margin-top: 15px;
 }
 
-.search_link {
+.search_wrapper span {
   color: green;
 }
 
@@ -913,12 +919,33 @@ a.banner_link img.full {
   color: black;
 }
 
-ul.philantropy li {
-  padding: 10px 0;
+.philanthropy_logo_cage {
+  text-align: justify;
 }
 
-ul.philantropy img {
-  padding: 20px 0;
+.philanthropy_logo_cage a {
+  margin-bottom: 20px;
+}
+
+.philanthropy_logo_cage a.rotary img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.philanthropy_logo_cage a.hale_centre img {
+  margin-left: 50px;
+}
+
+.philanthropy_logo_cage a.living_planet img {
+  height: 120px;
+  margin-top: 10px;
+}
+
+.philanthropy_logo_cage a.nw img,
+.philanthropy_logo_cage a.project_access img {
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 /* service-providers */
@@ -932,7 +959,10 @@ ul.philantropy img {
 .contact_table td {
   vertical-align: top;
   padding-right: 30px;
-  width: 33%;
+}
+
+.contact_table td.big_col {
+  width: 55%;
 }
 
 .office_box h4 {
@@ -1001,8 +1031,8 @@ ul.philantropy img {
 }
 
 .portfolio_image_thumbnails img {
-  width: 48px;
-  height: 30px;
+  width: 192px;
+  height: 120px;
   margin-bottom: 4px;
 }
 
@@ -1104,7 +1134,6 @@ ul.studies_list li a:hover .learn_more {
 
 .content_wrapper h3 {
   font-size: 15px;
-  margin-bottom: 8px;
   color: #333;
 }
 
@@ -1129,33 +1158,54 @@ table.asset_summary {
   margin-bottom: 15px;
 }
 
+table.asset_summary th {
+  text-align: left;
+  vertical-align: top;
+  font-size: 9px;
+  padding-bottom: 6px;
+}
+
 table.asset_summary td {
   padding-right: 15px;
   padding-bottom: 10px;
+  width: 25%;
+  vertical-align: middle;
+}
+
+table.asset_summary td.label_col {
+  width: 60px;
+  font-size: 9px;
+  line-height: 1.2em;
 }
 
 ul.summary_list {
-  font-size: 13px;
   color: #4d4d4d;
   margin-bottom: 25px;
   font-family: times, georgia, serif;
 }
 
 ul.summary_list li {
+  font-size: 15px;
   margin-bottom: 8px;
   padding-left: 15px;
   position: relative;
 }
 
-ul.summary_list li:before {
+table.case_info_table td ul li {
+  position: relative;
+  padding-left: 12px;
+}
+
+ul.summary_list li:before,
+table.case_info_table td ul li:before {
   content: "";
   width: 0;
   height: 0;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 2px;
-  border: 2px solid transparent;
-  border-left: 2px solid #999;
+  border: 3px solid transparent;
+  border-left: 3px solid #999;
 }
 
 /* portfolio */
@@ -1172,6 +1222,55 @@ ul.summary_list li:before {
 .portfolio_sidebar img {
   width: 158px;
   display: block;
+}
+
+/* Search */
+.search_results_wrapper {
+  padding: 90px 0 35px;
+  min-height: 600px;
+}
+
+.search_results_wrapper h1 {
+  font-size: 18px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+
+.search_results {
+  padding-top: 15px;
+}
+
+.search_results a.search_result_link {
+  display: block;
+  margin-bottom: 15px;
+  color: #036;
+  text-decoration: none;
+}
+
+a.search_result_link:hover {
+  text-decoration: underline;
+}
+
+.no_result {
+  color: #868686;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.service_cage {
+  width: 50%;
+  float: left;
+  text-align: justify;
+}
+
+.service_cage.large {
+  width: 100%;
+}
+
+.service_cage img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 35em) {

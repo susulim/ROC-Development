@@ -3,9 +3,9 @@
 <head>
   <title>ROC | Bridge Partner</title>
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
-  <link rel="stylesheet" type="text/css" href="../../assets/css/case-studies.css" />
   <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="/../assets/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.email').click(function() {
@@ -66,7 +66,7 @@
       <div id="page_banner">
         <div class="container">
           <img src="../../assets/images/banner-1.png" />
-          <div id="page_search_cage"><input type="text" placeholder="Search" /></div>
+          <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
       </div></!-- /#page_banner -->
 
@@ -122,47 +122,54 @@
                 </tr>
               </table>
               
-              <h3>Oppurtunity</h3>
+              <h3>Opportunity</h3>
               <p>ROC|Bridge was presented with the opportunity to purchase a property composed of four office buildings in Denver, CO.  The asset is summarized below:</p>
               
               <table class="asset_summary">
                 <tr>
-                  <td>Property Name / Street Address:</td>
-                  <td>Corporate Center 4500 Cherry Creek Dr.</td>
-                  <td>Campus Building A 4300 Cherry Creek Dr.</td>
-                  <td>Campus Building B 700 South Ash Street</td>
-                  <td>Campus Building C 710 Ash Street</td>
+                  <th></th>
+                  <th>Corporate Center</th>
+                  <th>Campus Building A</th>
+                  <th>Campus Building B</th>
+                  <th>Campus Building C</th>
                 </tr>
                 <tr>
-                  <td>Net Rentable Area:</td>
+                  <td class="label_col">Property Name / Street Address:</td>
+                  <td>4500 Cherry Creek Dr.</td>
+                  <td>4300 Cherry Creek Dr.</td>
+                  <td>700 South Ash St.</td>
+                  <td>710 Ash St.</td>
+                </tr>
+                <tr>
+                  <td class="label_col">Net Rentable Area:</td>
                   <td>238,357</td>
                   <td>140,527</td>
                   <td>107,600</td>
                   <td>107,560</td>
                 </tr>
                 <tr>
-                  <td>Year Built / Renovations:</td>
+                  <td class="label_col">Year Built / Renovations:</td>
                   <td>1978 / Renovated in 1990-91 and 2002</td>
                   <td>1980 / Renovated in 1993</td>
                   <td>1962 / Renovated in 1993</td>
                   <td>1963 / Renovated in 1993 and 2006</td>
                 </tr>
                 <tr>
-                  <td>Number of Floors:</td>
+                  <td class="label_col">Number of Floors:</td>
                   <td>12</td>
                   <td>5</td>
                   <td>2</td>
                   <td>2</td>
                 </tr>
                 <tr>
-                  <td>Avg. Floor Plate:</td>
+                  <td class="label_col">Avg. Floor Plate:</td>
                   <td>21,623</td>
                   <td>28,150</td>
                   <td>53,800</td>
                   <td>53,780</td>
                 </tr>
                 <tr>
-                  <td>Percent Leased:</td>
+                  <td class="label_col">Percent Leased:</td>
                   <td>50%</td>
                   <td>100%</td>
                   <td>100%</td>
@@ -212,7 +219,7 @@
     </div><!-- /#main -->
 
     <footer>
-      <a href="">Copyright&#169;2011. All rights reserved</a>
+      <a href="">Copyright&#169;2011. All rights reserved</a> <a href="/legal" target="_new">Legal</a>
     </footer>
   </div><!-- /#wrapper -->
 

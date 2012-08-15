@@ -9,6 +9,7 @@
   <script type="text/javascript" src="../assets/javascripts/slides.js"></script>
   <script type="text/javascript" src="../assets/javascripts/stupidtable.js"></script>
   <script type="text/javascript" src="../assets/javascripts/application.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.email').click(function() {
@@ -69,9 +70,9 @@
       <div id="page_banner">
         <div class="container">
           <img src="../assets/images/banner-1.png" />
-          <div id="page_search_cage"><input type="text" placeholder="Search" /></div>
+          <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
-      </div></!-- /#page_banner -->
+      </div><!-- /#page_banner -->
 
       <div class="container page_content">
         <div class="page_header">Property Management</div><!-- /.page_title -->
@@ -90,8 +91,8 @@
           <article>
             <div class="content_wrapper">
               <h1>Current Portfolio</h1>
-              <p>BPM manages over 16,500 multifamily apartment units and over 1.5 million square feet of commercial office space, which are owned by ROC|Bridge&#8217;s privately held real estate investment vehicles, other funds, institutional capital aggregators and individual investors.</p>
-              <p>Our property management division employs over 550 real estate professionals, in over 40 unique sub-markets across the U.S.  This includes 54 property managers and 120 leasing agents, and over 320 on-site personnel providing property maintenance and operations.</p>
+              <p>BPM manages over 16,500 multifamily apartment units and over 1.5 million square feet of commercial office space. It manages (i) most of the properties owned by ROC|Bridge&#8217;s privately held real estate investment vehicles, and (ii) properties owned by other funds, institutional capital aggregators and individual investors.</p>
+              <p>Our property management division employs over 500 real estate professionals, in over 40 unique sub-markets across the U.S.  This includes 54 property managers and 120 leasing agents, and over 320 on-site personnel providing property maintenance and operations.</p>
               
               <div id="map_wrapper">
                 <div class="map_anchor fresno">
@@ -177,325 +178,379 @@
                 </thead>
                 <tbody>
                 <tr class="even">
-                  <td class="relative_cage">Indigo on Forest <img src="../assets/images/portfolio/thumb-1.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Indigo on Forest <img src="../assets/images/portfolio/thumb-1.png" class="portfolio_thumb" /></div></td>
                   <td>Dallas</td>
                   <td>Texas</td>
                   <td>1,217</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Villages at Gateway <img src="../assets/images/portfolio/thumb-2.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Villages at Gateway <img src="../assets/images/portfolio/thumb-2.png" class="portfolio_thumb" /></div></td>
                   <td>Denver</td>
                   <td>Colorado</td>
                   <td>760</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Chelsea Park Village <img src="../assets/images/portfolio/thumb-3.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Chelsea Park Village <img src="../assets/images/portfolio/thumb-3.png" class="portfolio_thumb" /></div></td>
                   <td>Aurora</td>
                   <td>Colorado</td>
                   <td>600</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Park at Lakeside <img src="../assets/images/portfolio/thumb-4.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Park at Lakeside <img src="../assets/images/portfolio/thumb-4.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>592</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Promenade at Towne <img src="../assets/images/portfolio/thumb-5.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Promenade at Towne <img src="../assets/images/portfolio/thumb-5.png" class="portfolio_thumb" /></div></td>
                   <td>Aurora</td>
                   <td>Colorado</td>
                   <td>511</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Warwick Square <img src="../assets/images/portfolio/thumb-6.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Warwick Square <img src="../assets/images/portfolio/thumb-6.png" class="portfolio_thumb" /></div></td>
                   <td>Santa Ana</td>
                   <td>California</td>
                   <td>500</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Maple Hills / Royal <img src="../assets/images/portfolio/thumb-7.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Maple Hills / Royal <img src="../assets/images/portfolio/thumb-7.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>455</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">The Arbors at Eastland <img src="../assets/images/portfolio/thumb-8.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">The Arbors at Eastland <img src="../assets/images/portfolio/thumb-8.png" class="portfolio_thumb" /></div></td>
                   <td>Bloomington</td>
                   <td>Illinois</td>
                   <td>449</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">La Jolla Champions  <img src="../assets/images/portfolio/thumb-9.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">La Jolla Champions  <img src="../assets/images/portfolio/thumb-9.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>448</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Torrey Ridge Apartments <img src="../assets/images/portfolio/thumb-10.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Torrey Ridge Apartments <img src="../assets/images/portfolio/thumb-10.png" class="portfolio_thumb" /></div></td>
                   <td>Fresno</td>
                   <td>California</td>
                   <td>418</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">One Dartmouth Place <img src="../assets/images/portfolio/thumb-11.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">One Dartmouth Place <img src="../assets/images/portfolio/thumb-11.png" class="portfolio_thumb" /></div></td>
                   <td>Denver</td>
                   <td>Colorado</td>
                   <td>418</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Tudor Heights <img src="../assets/images/portfolio/thumb-12.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Tudor Heights <img src="../assets/images/portfolio/thumb-12.png" class="portfolio_thumb" /></div></td>
                   <td>Omaha</td>
                   <td>Nebraska</td>
                   <td>418</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Mirabella Apartments <img src="../assets/images/portfolio/thumb-13.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Mirabella Apartments <img src="../assets/images/portfolio/thumb-13.png" class="portfolio_thumb" /></div></td>
                   <td>Tucson</td>
                   <td>Arizona</td>
                   <td>410</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Barclay Club <img src="../assets/images/portfolio/thumb-14.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Barclay Club <img src="../assets/images/portfolio/thumb-14.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>400</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Valencia Crossing <img src="../assets/images/portfolio/thumb-15.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Valencia Crossing <img src="../assets/images/portfolio/thumb-15.png" class="portfolio_thumb" /></div></td>
                   <td>Mesa</td>
                   <td>Arizona</td>
                   <td>397</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Ridge at Chestnut <img src="../assets/images/portfolio/thumb-16.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Ridge at Chestnut <img src="../assets/images/portfolio/thumb-16.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>388</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Sandpiper <img src="../assets/images/portfolio/thumb-17.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Sandpiper <img src="../assets/images/portfolio/thumb-17.png" class="portfolio_thumb" /></div></td>
                   <td>Westminster</td>
                   <td>Colorado</td>
                   <td>358</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Whispering Oaks <img src="../assets/images/portfolio/thumb-18.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Whispering Oaks <img src="../assets/images/portfolio/thumb-18.png" class="portfolio_thumb" /></div></td>
                   <td>San Antonio</td>
                   <td>Texas</td>
                   <td>346</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Oak Creek Apartments <img src="../assets/images/portfolio/thumb-19.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Oak Creek Apartments <img src="../assets/images/portfolio/thumb-19.png" class="portfolio_thumb" /></div></td>
                   <td>Arlington</td>
                   <td>Texas</td>
                   <td>336</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Briarwood North <img src="../assets/images/portfolio/thumb-20.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Briarwood North <img src="../assets/images/portfolio/thumb-20.png" class="portfolio_thumb" /></div></td>
                   <td>Denver</td>
                   <td>Colorado</td>
                   <td>322</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Autumn Chase <img src="../assets/images/portfolio/thumb-21.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Autumn Chase <img src="../assets/images/portfolio/thumb-21.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>320</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Monterra <img src="../assets/images/portfolio/thumb-22.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Monterra <img src="../assets/images/portfolio/thumb-22.png" class="portfolio_thumb" /></div></td>
                   <td>Albuquerque</td>
                   <td>New Mexico</td>
                   <td>312</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Windmill <img src="../assets/images/portfolio/thumb-23.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Windmill <img src="../assets/images/portfolio/thumb-23.png" class="portfolio_thumb" /></div></td>
                   <td>Colorado Springs </td>
                   <td>Colorado</td>
                   <td>304</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Republic Hollow Tree <img src="../assets/images/portfolio/thumb-24.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Republic Hollow Tree <img src="../assets/images/portfolio/thumb-24.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>280</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">West Town Court  <img src="../assets/images/portfolio/thumb-25.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">West Town Court  <img src="../assets/images/portfolio/thumb-25.png" class="portfolio_thumb" /></div></td>
                   <td>Phoenix</td>
                   <td>Arizona</td>
                   <td>274</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Sun Creek Village <img src="../assets/images/portfolio/thumb-26.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Sun Creek Village <img src="../assets/images/portfolio/thumb-26.png" class="portfolio_thumb" /></div></td>
                   <td>Albuquerque</td>
                   <td>New Mexico</td>
                   <td>267</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Arvada Village <img src="../assets/images/portfolio/thumb-27.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Arvada Village <img src="../assets/images/portfolio/thumb-27.png" class="portfolio_thumb" /></div></td>
                   <td>Arvada Green</td>
                   <td>Colorado</td>
                   <td>264</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Autumn Lakes <img src="../assets/images/portfolio/thumb-28.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Autumn Lakes <img src="../assets/images/portfolio/thumb-28.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>252</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Tuscany Cove <img src="../assets/images/portfolio/thumb-29.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Tuscany Cove <img src="../assets/images/portfolio/thumb-29.png" class="portfolio_thumb" /></div></td>
                   <td>West Valley City</td>
                   <td>Utah</td>
                   <td>252</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Woodglen Village <img src="../assets/images/portfolio/thumb-30.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Woodglen Village <img src="../assets/images/portfolio/thumb-30.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>250</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Tuscany Cove <img src="../assets/images/portfolio/thumb-31.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Tuscany Cove <img src="../assets/images/portfolio/thumb-31.png" class="portfolio_thumb" /></div></td>
                   <td>Dallas</td>
                   <td>Texas</td>
                   <td>244</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Villa Sierra <img src="../assets/images/portfolio/thumb-32.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Villa Sierra <img src="../assets/images/portfolio/thumb-32.png" class="portfolio_thumb" /></div></td>
                   <td>El Paso</td>
                   <td>Texas</td>
                   <td>243</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Mission Falls <img src="../assets/images/portfolio/thumb-33.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Mission Falls <img src="../assets/images/portfolio/thumb-33.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>228</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">La Entrada  <img src="../assets/images/portfolio/thumb-34.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">La Entrada  <img src="../assets/images/portfolio/thumb-34.png" class="portfolio_thumb" /></div></td>
                   <td>Albuquerque</td>
                   <td>New Mexico</td>
                   <td>216</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Cheyenne Crest <img src="../assets/images/portfolio/thumb-35.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Cheyenne Crest <img src="../assets/images/portfolio/thumb-35.png" class="portfolio_thumb" /></div></td>
                   <td>Colorado Springs </td>
                   <td>Colorado</td>
                   <td>208</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Kings Manor <img src="../assets/images/portfolio/thumb-36.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Kings Manor <img src="../assets/images/portfolio/thumb-36.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>207</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Bridges at CitiFront <img src="../assets/images/portfolio/thumb-37.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Bridges at CitiFront <img src="../assets/images/portfolio/thumb-37.png" class="portfolio_thumb" /></div></td>
                   <td>Salt Lake City</td>
                   <td>Utah</td>
                   <td>204</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Kings Quarters <img src="../assets/images/portfolio/thumb-38.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Kings Quarters <img src="../assets/images/portfolio/thumb-38.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>202</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Evergreen Point <img src="../assets/images/portfolio/thumb-39.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Evergreen Point <img src="../assets/images/portfolio/thumb-39.png" class="portfolio_thumb" /></div></td>
                   <td>Houston</td>
                   <td>Texas</td>
                   <td>197</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Andorra  <img src="../assets/images/portfolio/thumb-40.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Andorra  <img src="../assets/images/portfolio/thumb-40.png" class="portfolio_thumb" /></div></td>
                   <td>Indio</td>
                   <td>California </td>
                   <td>186</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Pinewood <img src="../assets/images/portfolio/thumb-41.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Pinewood <img src="../assets/images/portfolio/thumb-41.png" class="portfolio_thumb" /></div></td>
                   <td>Seattle </td>
                   <td>Washington</td>
                   <td>180</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">San Marin Apartments <img src="../assets/images/portfolio/thumb-42.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">San Marin Apartments <img src="../assets/images/portfolio/thumb-42.png" class="portfolio_thumb" /></div></td>
                   <td>Tucson</td>
                   <td>Arizona</td>
                   <td>176</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Park Meadows <img src="../assets/images/portfolio/thumb-43.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Park Meadows <img src="../assets/images/portfolio/thumb-43.png" class="portfolio_thumb" /></div></td>
                   <td>Kansas City</td>
                   <td>Missouri</td>
                   <td>172</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Oakbrook Terrace Apartments <img src="../assets/images/portfolio/thumb-44.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Oakbrook Terrace Apartments <img src="../assets/images/portfolio/thumb-44.png" class="portfolio_thumb" /></div></td>
                   <td>Topeka</td>
                   <td>Kansas</td>
                   <td>170</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">CitiFront <img src="../assets/images/portfolio/thumb-45.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">CitiFront <img src="../assets/images/portfolio/thumb-45.png" class="portfolio_thumb" /></div></td>
                   <td>Salt Lake City</td>
                   <td>Utah</td>
                   <td>155</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Wyndchase <img src="../assets/images/portfolio/thumb-46.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Wyndchase <img src="../assets/images/portfolio/thumb-46.png" class="portfolio_thumb" /></div></td>
                   <td>El Paso</td>
                   <td>Texas</td>
                   <td>150</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">University Villa <img src="../assets/images/portfolio/thumb-47.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">University Villa <img src="../assets/images/portfolio/thumb-47.png" class="portfolio_thumb" /></div></td>
                   <td>Provo</td>
                   <td>Utah</td>
                   <td>126</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Arvada Green <img src="../assets/images/portfolio/thumb-48.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Arvada Green <img src="../assets/images/portfolio/thumb-48.png" class="portfolio_thumb" /></div></td>
                   <td>Arvada Green</td>
                   <td>Colorado</td>
                   <td>108</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Sungate <img src="../assets/images/portfolio/thumb-49.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Sungate <img src="../assets/images/portfolio/thumb-49.png" class="portfolio_thumb" /></div></td>
                   <td>Albuquerque</td>
                   <td>New Mexico</td>
                   <td>95</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Rancho Verde <img src="../assets/images/portfolio/thumb-50.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Rancho Verde <img src="../assets/images/portfolio/thumb-50.png" class="portfolio_thumb" /></div></td>
                   <td>Albuquerque</td>
                   <td>New Mexico</td>
                   <td>65</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Axis 739 <img src="../assets/images/portfolio/thumb-51.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Axis 739 <img src="../assets/images/portfolio/thumb-51.png" class="portfolio_thumb" /></div></td>
                   <td>Salt Lake City</td>
                   <td>Utah</td>
                   <td>60</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Patrick Lofts <img src="../assets/images/portfolio/thumb-52.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Patrick Lofts <img src="../assets/images/portfolio/thumb-52.png" class="portfolio_thumb" /></div></td>
                   <td>Salt Lake City</td>
                   <td>Utah</td>
                   <td>34</td>
                 </tr><!-- /.odd -->
                 <tr class="even">
-                  <td class="relative_cage">Presidents Corner <img src="../assets/images/portfolio/thumb-53.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Presidents Corner <img src="../assets/images/portfolio/thumb-53.png" class="portfolio_thumb" /></div></td>
                   <td>Dallas</td>
                   <td>Texas</td>
                   <td>100</td>
                 </tr><!-- /.even -->
                 <tr class="odd">
-                  <td class="relative_cage">Acacia Lofts <img src="../assets/images/portfolio/thumb-54.png" class="portfolio_thumb" /></td>
+                  <td class="relative_cage">
+                    <div class="relative_cage">Acacia Lofts <img src="../assets/images/portfolio/thumb-54.png" class="portfolio_thumb" /></div></td>
                   <td>Casa Grande</td>
                   <td>Arizona</td>
                   <td>28units<br/>152lots</td>
@@ -517,25 +572,29 @@
 
                 <tbody>
                   <tr class="even">
-                    <td class="relative_cage">Cherry Creek <img src="../assets/images/portfolio/thumb-55.png" class="portfolio_thumb" /></td>
+                    <td class="relative_cage">
+                      <div class="relative_cage">Cherry Creek <img src="../assets/images/portfolio/thumb-55.png" class="portfolio_thumb" /></div></td>
                     <td>Denver</td>
                     <td>Colorado</td>
                     <td>594,044</td>
                   </tr><!-- /.even -->
                   <tr class="odd">
-                    <td class="relative_cage">1700 W. Loop  <img src="../assets/images/portfolio/thumb-56.png" class="portfolio_thumb" /></td>
+                    <td class="relative_cage">
+                      <div class="relative_cage">1700 W. Loop  <img src="../assets/images/portfolio/thumb-56.png" class="portfolio_thumb" /></div></td>
                     <td>Houston</td>
                     <td>Texas</td>
                     <td>272,113</td>
                   </tr><!-- /.odd -->
                   <tr class="even">
-                    <td class="relative_cage">Promenade Building <img src="../assets/images/portfolio/thumb-57.png" class="portfolio_thumb" /></td>
+                    <td class="relative_cage">
+                      <div class="relative_cage">Promenade Building <img src="../assets/images/portfolio/thumb-57.png" class="portfolio_thumb" /></div></td>
                     <td>Dallas</td>
                     <td>Texas</td>
                     <td>221,404</td>
                   </tr><!-- /.even -->
                   <tr class="odd">
-                    <td class="relative_cage">Logan Tower  <img src="../assets/images/portfolio/thumb-58.png" class="portfolio_thumb" /></td>
+                    <td class="relative_cage">
+                      <div class="relative_cage">Logan Tower  <img src="../assets/images/portfolio/thumb-58.png" class="portfolio_thumb" /></div></td>
                     <td>Denver</td>
                     <td>Colorado</td>
                     <td>69,784</td>
@@ -557,7 +616,8 @@
 
                 <tbody>
                   <tr class="odd">
-                    <td class="relative_cage">Park Inn Hotel  <img src="../assets/images/portfolio/thumb-59.png" class="portfolio_thumb" /></td>
+                    <td class="relative_cage">
+                      <div class="relative_cage">Park Inn Hotel  <img src="../assets/images/portfolio/thumb-59.png" class="portfolio_thumb" /></div></td>
                     <td>Albuquerque</td>
                     <td>New Mexico</td>
                     <td>310 Rooms</td>

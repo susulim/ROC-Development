@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
   <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.email').click(function() {
@@ -65,9 +66,9 @@
       <div id="page_banner">
         <div class="container">
           <img src="../../assets/images/banner-1.png" />
-          <div id="page_search_cage"><input type="text" placeholder="Search" /></div>
+          <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
-      </div></!-- /#page_banner -->
+      </div><!-- /#page_banner -->
 
       <div class="container page_content">
         <div class="page_header">ABOUT ROC|BRIDGE PARTNERS</div><!-- /.page_title -->
@@ -91,18 +92,20 @@
             <div class="content_wrapper">
               <h1>Service Providers</h1>
               <p>ROC|Bridge works with top tier professionals and institutions to provide first class service to our investors.</p>
-              <ul class="services">
-                <li><b>Legal Counsel<b><br/><a href="http://www.stblaw.com" target="_new"><img src="/assets/images/service-provider/simpson.png" /></a></li>
-                <li><b>Auditor<b><br/><a href="http://www.deloitte.com/view/en_US/us/index.htm" target="_new"><img src="/assets/images/service-provider/deloitte.png" /></a></li>
-                <li><b>Fund Administrator<b><br/><a href="http://www.cortlandglobal.com/aboutus.aspx" target="_new"><img src="/assets/images/service-provider/cortland.png" /></a></li>
-                <li><b>Bankers<b><br/>
-                  <a href="http://www.usbank.com/en/CommlGovtHome.cfm" target="_new"><img src="/assets/images/service-provider/wells.png" /></a><br/>
-                  <a href="https://www.wellsfargo.com/com/" target="_new"><img src="/assets/images/service-provider/us-bank.png" /></a><br/>
-                  <a href="https://www.key.com/corporate/index.jsp" target="_new"><img src="/assets/images/service-provider/keybank.png" /></a><br/>
-                  <a href="http://corp.bankofamerica.com/business/bi/home" target="_new"><img src="/assets/images/service-provider/bank-of-america.png" /></a><br/>
-                  <a href="https://www.pnc.com/webapp/unsec/Homepage.do?siteArea=/pnccorp/PNC/Home/Corporate+and+Institutional" target="_new"><img src="/assets/images/service-provider/pnc-bank.png" /></a>
-                </li>
-              </ul>
+              <div class="underline">
+                <div class="service_cage"><p>Legal Counsel</p><a href="http://www.stblaw.com" target="_new"><img src="/assets/images/service-provider/simpson.png" /></a></div>
+                <div class="service_cage"><p>Auditor</p><a href="http://www.deloitte.com/view/en_US/us/index.htm" target="_new"><img src="/assets/images/service-provider/deloitte.png" /></a></div>
+                <div class="service_cage"><p>Fund Administrator</p><a href="http://www.cortlandglobal.com/index.aspx" target="_new"><img src="/assets/images/service-provider/cortland.png" /></a></div>
+                <div class="clearfix"></div>
+                <div class="service_cage large"><p>Bankers</p>
+                  <a href="http://www.usbank.com/en/CommlGovtHome.cfm" target="_new"><img src="/assets/images/service-provider/wells.png" /></a>
+                  <a href="https://www.wellsfargo.com/com/" target="_new"><img src="/assets/images/service-provider/us-bank.png" /></a>
+                  <a href="https://www.key.com/corporate/index.jsp" target="_new"><img src="/assets/images/service-provider/keybank.png" /></a>
+                  <a href="http://corp.bankofamerica.com/business/bi/home" target="_new"><img src="/assets/images/service-provider/bank-of-america.png" /></a>
+                  <a href="https://www.pnc.com/webapp/unsec/Homepage.do?siteArea=/pnccorp/PNC/Home/Corporate+and+Institutional" target="_new"><img src="/assets/images/service-provider/pnc-bank.png" />
+                </div>
+                <div class="clearfix"></div>
+              </div><!-- /.underline -->
             </div><!-- /.content_wrapper -->
           </article>
 
