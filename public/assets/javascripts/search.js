@@ -1,4 +1,6 @@
+
 $(document).ready(function() {
+
   $('#home_search_input, #page_search_cage input').keydown(function(event) {
     if (event.which == 13) {
       var searchTarget = $(this).val().toLowerCase()
