@@ -447,7 +447,7 @@ body.page {
 .page_header {
   color: #fff;
   padding: 8px 15px;
-  font-size: 13px;
+  font-size: 21px;
   text-shadow: 0 -1px #183550;
   border: 1px solid #333;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
@@ -634,7 +634,7 @@ ul.action_list {
   padding: 15px;
   font-size: 13px;
   letter-spacing: 1px;
-  font-family: helvetica neue, sans-serif;
+  font-family: times, georgia, serif;
   color: #fff;
 }
 
