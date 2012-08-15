@@ -523,7 +523,7 @@ article {
 table {
   width: 100%;
   font-size: 13px;
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 table.team_list {
@@ -1133,7 +1133,6 @@ ul.studies_list li a:hover .learn_more {
 
 .content_wrapper h3 {
   font-size: 15px;
-  margin-bottom: 8px;
   color: #333;
 }
 
