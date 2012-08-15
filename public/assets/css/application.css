@@ -677,10 +677,11 @@ ul.action_list li a:hover {
 }
 
 .search_wrapper a {
+  color: #1122D5;
   margin-top: 15px;
 }
 
-.search_link {
+.search_wrapper span {
   color: green;
 }
 
