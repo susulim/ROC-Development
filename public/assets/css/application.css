@@ -1091,7 +1091,7 @@ a.banner_link img.full {
 
 /*  Legal Page  */
 .legal_wrapper {
-  padding-top: 80px;
+  padding-top: 130px;
 }
 
 .legal_wrapper h2 {
@@ -1289,7 +1289,7 @@ table.case_info_table td ul li:before {
   text-align: center;
   width: 350px;
   height: 320px;
-  margin: 90px auto 150px;
+  margin: 200px auto 150px;
   border-radius: 4px;
   box-shadow: 0 1px 4px 0 #868686;
   background: #f2f5f6; /* Old browsers */
@@ -1397,7 +1397,7 @@ a.forgot_password:hover {
 
 /* Search */
 .search_results_wrapper {
-  padding: 90px 0 35px;
+  padding: 135px 0 35px;
   min-height: 600px;
 }
 
