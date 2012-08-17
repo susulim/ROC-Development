@@ -1271,6 +1271,22 @@ table.case_info_table td ul li:before {
   display: block;
 }
 
+.login_input {
+  background-color: #A3E0FF;
+  text-align: center;
+  width: 350px;
+  height: 320px;
+}
+
+.login_input span {
+  padding-top: 15px;
+}
+
+.login_input p {
+  padding: 10px;
+  text-align: center;
+}
+
 /* Search */
 .search_results_wrapper {
   padding: 90px 0 35px;
