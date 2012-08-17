@@ -282,7 +282,8 @@ nav {
   text-align: center;
 }
 
-#investor_login_link:hover {
+#investor_login_link:hover,
+#home_link:hover {
   top: 1px;
 }
 
