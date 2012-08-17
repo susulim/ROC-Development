@@ -270,24 +270,34 @@ nav {
   padding-top: 38px;
 }
 
-#investor_login_link {
+#investor_login_link,
+#home_link {
   position: absolute;
   display: block;
   top: 0;
-  right: 6px;
   color: #000;
   font-size: 12px;
   text-decoration: none;
-  background: url(../images/home-button.png) no-repeat;
-  width: 90px;
   height: 30px;
-  font-weight: bold;
   text-align: center;
-  padding-top: 6px;
 }
 
 #investor_login_link:hover {
   top: 1px;
+}
+
+#home_link {
+  right: 165px;
+  background: url(../images/home-button.png) no-repeat;
+  width: 90px;
+  padding-top: 6px;
+}
+
+#investor_login_link {
+  right: 0;
+  background: url(../images/login-button.png) no-repeat;
+  width: 165px;
+  padding-top: 6px;
 }
 
 span.header_link, span.header_link > a {
@@ -1272,11 +1282,105 @@ table.case_info_table td ul li:before {
 }
 
 .login_input {
-  background-color: #A3E0FF;
   text-align: center;
   width: 350px;
   height: 320px;
+  margin: 90px auto 150px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 #868686;
+  background: #f2f5f6; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+  
 }
+
+.login_input legend {
+  font-size: 18px;
+  text-shadow: 0 1px #fff;
+  padding: 10px 0;
+}
+
+.login_input label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #868686;
+  text-shadow: 0 1px #fff;
+  margin: 15px 0 5px;
+  padding-left: 50px;
+}
+
+.login_input input.textbox {
+  width: 235px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #999;
+  padding: 4px 6px;
+  -webkit-box-shadow: inset 0 1px 1px 0 #ccc;
+  -moz-box-shadow: inset 0 1px 1px 0 #ccc;
+  box-shadow: inset 0 1px 1px 0 #ccc;
+}
+
+.login_input input.textbox:focus {
+  -webkit-box-shadow: 0 0 4px 0 skyblue;
+  -moz-box-shadow: 0 0 4px 0 skyblue;
+  box-shadow: 0 0 4px 0 skyblue;
+}
+
+.login_input .investor_login_button {
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 100px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #0074cc;
+  *background-color: #0055cc;
+  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
+  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-repeat: repeat-x;
+  border-color: #0055cc #0055cc #003580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.login_input .investor_login_button:hover {
+  background-color: #0055cc;
+}
+
+.login_input a.forgot_password {
+  font-size: 14px;
+  color: #036;
+  text-decoration: none;
+}
+
+a.forgot_password:hover {
+  text-decoration: underline;
+}
+
 
 .login_input span {
   padding-top: 15px;

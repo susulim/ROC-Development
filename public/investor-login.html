@@ -64,42 +64,24 @@
 
     <div id="main">
 
-      <div id="page_banner">
-        <div class="container">
-          <img src="../../assets/images/banner-1.png" />
-          <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
-        </div>
-      </div></!-- /#page_banner -->
+      <div class="container">
 
-      <div class="container page_content">
-        <div class="page_header"></div><!-- /.page_title -->
+        <div class="login_input">
+          <form id="investor_login">
+            <fieldset>
+              <legend>Investor Login</legend>
+              <label>User ID:</label>
+              <input type="text" name="investor[id]" class="textbox" />
+              <label>Password:</label>
+              <input type="password" name="investor[password]" class="textbox" />
+              <div class="clearfix"></div>
+              <input type="submit" value="Login" class="investor_login_button" />
+              <div class="clearfix"></div>
+              <a href="" class="forgot_password">Forgot Username or Password?</a>
+            </fieldset>
+          </form>
+        </div><!-- /.login_input -->
         
-        <div class="page_body">
-          <aside id="left_sidebar">
-            <div class="sidebar_links">
-            <div class="sidebar_border"></div>
-            <div class="clearfix"></div>
-          </aside>
-
-          <article>
-          <div class="content_wrapper">
-            <div class="login_input">
-              <span>Log In</span>
-              <p>User ID <br /> <input type="text" placeholder="Robert Morse" /></p>
-              <p>Password: <br /> <input type="password" placeholder="********" /></p>
-              <p><input type="submit" value="Log In" /></p>
-              <a href="">Forgot Username or Password?</a>
-            </div>
-
-
-          </div><!-- /.content_wrapper -->
-          </article>
-
-          <aside id="right_sidebar">
-          </aside>
-          <div class="clearfix"></div>
-        </div><!-- /.page_body -->
-
       </div><!-- /.container -->
 
     </div><!-- /#main -->
