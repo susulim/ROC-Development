@@ -1130,6 +1130,14 @@ ul.studies_list li a:hover .learn_more {
   margin-top: -5px;
   font-weight: normal;
   margin-bottom: 15px;
+  display: inline-block;
+}
+
+.content_wrapper .location_map {
+  font-family: times, georgia, serif;
+  font-size: 13px;
+  padding-left: 10px;
+  color: #551AAE;
 }
 
 .content_wrapper h3 {
