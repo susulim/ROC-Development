@@ -910,6 +910,45 @@ a.banner_link img.full {
   width: 522px;
 }
 
+.news_list .date {
+  padding: 5px;
+}
+
+.news_header {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.news_header .showing {
+  color: #666666;
+  text-align: left;
+  width: 150px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.news_header .page {
+  color: #666666;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.news_header .next {
+  text-align: right;
+  color: #666666;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.office_box .media_contact {
+  color: black;
+  font-size: 15px;
+}
+
+.about {
+  text-decoration: underline;
+}
+
 /* philantropy page */
 
 .underline p {
