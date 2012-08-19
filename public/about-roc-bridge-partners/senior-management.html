@@ -8,9 +8,21 @@
   <script type="text/javascript" src="../../assets/javascripts/slides.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/stupidtable.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/application.js"></script>
+  <script type="text/javascript" src="../../assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
+
+      $('header').scrollspy({
+        min: $('.page_content').offset().top - 120,
+        onEnter: function(element, position) {
+          $('header').addClass('solid');
+        },
+        onLeave: function(element, position) {
+          $('header').removeClass('solid');
+        }
+      });
+
       $('.email').click(function() {
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/senior-management"
