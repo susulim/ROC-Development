@@ -5,12 +5,24 @@
   <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
   <script type="text/javascript" src="/../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="/../assets/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/../assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
+
+      $('header').scrollspy({
+        min: $('.page_content').offset().top - 120,
+        onEnter: function(element, position) {
+          $('header').addClass('solid');
+        },
+        onLeave: function(element, position) {
+          $('header').removeClass('solid');
+        }
+      });
+
       $('.email').click(function() {
         var loc = window.location.host
-        window.location="mailto:?&body=http://" + loc + "/news/participation-in-conferences"
+        window.location="mailto:?&body=http://" + loc + "/news/key-note-speaker"
       });
     });
   </script>
