@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROC | Bridge Partner</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/map.css" />
+  <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+      if ($('#map_canvas').length > 0) {
+        var myPos = new google.maps.LatLng(33.417706,-111.787837);
+        var myPos2 = new google.maps.LatLng(33.477195,-112.239798);
+        var myPos3 = new google.maps.LatLng(32.882452,-111.725728);
+        var myPos4 = new google.maps.LatLng(32.204191,-110.838034);
+        var myPos5 = new google.maps.LatLng(32.149669,-110.957128);
+        mapOptions = {
+          zoom: 7,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: myPos
+        }
+        
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions)
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos,
+          icon: '/assets/images/map-anchor-1.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos2,
+          icon: '/assets/images/map-anchor-2.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos3,
+          icon: '/assets/images/map-anchor-3.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos4,
+          icon: '/assets/images/map-anchor-4.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos5,
+          icon: '/assets/images/map-anchor-5.png'
+        })
+
+      }
+
+      $('.email').click(function() {
+        var loc = window.location.host
+        window.location="mailto:?&body=http://" + loc + "/property-management/portfolio"
+      });
+    });
+  </script>
+</head>
+
+<body class="page">
+  <div id="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/"><img src="../../assets/images/logo.png" /></a>
+        </div><!-- /.logo -->
+        <nav>
+          <span class="header_link">
+            <b>About ROC|Bridge Partners</b>
+            <div class="dropmenu">
+              <a href="/about-roc-bridge-partners/company-overview">Company Overview</a>
+              <a href="/about-roc-bridge-partners/senior-management">The Team</a>
+              <a href="/about-roc-bridge-partners/service-providers/service">Service Providers</a>
+              <a href="/about-roc-bridge-partners/philanthropy/philanthropy">Philanthropy</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Investment Management</b>
+            <div class="dropmenu">
+              <a href="/investment-management/overview">Overview</a>
+              <a href="/investment-management/mission">Mission</a>
+              <a href="/investment-management/the-opportunity">The Opportunity</a>
+              <a href="/investment-management/case-studies">Case Studies</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Properties</b>
+            <div class="dropmenu">
+              <a href="/property-management/overview">Overview</a>
+              <a href="/property-management/portfolio">Current Portfolio</a>
+              <a href="/property-management/monetized-properties">Monetized Properties</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          
+          <span class="header_link"><a href="/news/news"><b>News & Updates</b></a></span>
+          <span class="header_link"><a href="/about-roc-bridge-partners/contact/contact-us"><b>Contact Us</b></a></span>
+        </nav><!-- /nav -->
+        <a href="/" id="home_link">Home</a>
+        <a href="/investor-login" id="investor_login_link">Investor Login</a>
+
+        <div class="clearfix"></div>
+
+      </div><!-- /.container -->
+    </header>
+
+    <div id="main">
+      <div id="map_page" class="container">
+        <div class="map_column">
+          <div id="map_canvas"></div>
+        </div><!-- /.map_column -->
+        
+        <div class="map_info_column">
+          <ul class="map_info_list">
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-1.png" /></span>
+              <span class="info_col">
+                <h3>Valencia Crossing</h3>
+                <p>111 North Gilbert Road, Mesa, Arizona 85203</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-2.png" /></span>
+              <span class="info_col">
+                <h3>West Town Court </h3>
+                <p>8400 West Virginia Ave, Phoenix, Arizona 85037</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-3.png" /></span>
+              <span class="info_col">
+                <h3>Acacia Lofts</h3>
+                <p>1456 E 9th St Ste 283, Casa Grande, Arizona 85122</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-4.png" /></span>
+              <span class="info_col">
+                <h3>Mirabella Apartments</h3>
+                <p>1345 S. Kolb Road, Tucson, Arizona 85710</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-5.png" /></span>
+              <span class="info_col">
+                <h3>San Marin Apartments</h3>
+                <p>5650 S. Park Avenue, Tucson, Arizona 85706</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+          </ul>
+        </div><!-- /.map_info_column -->
+        
+        <div class="clearfix"></div>
+      </div><!-- /.container -->
+    </div><!-- /#main -->
+
+    <footer>
+      Copyright&#169;2011. All rights reserved. <a href="/legal" target="_new">Legal</a>
+    </footer>
+  </div><!-- /#wrapper -->
+
+
+
+</body>
+
+</html>
+
+
+
+
+
