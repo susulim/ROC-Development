@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROC | Bridge Partner</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/map.css" />
+  <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+      if ($('#map_canvas').length > 0) {
+        var myPos = new google.maps.LatLng(39.029252,-94.503021);
+        var myPos2 = new google.maps.LatLng(39.24663,-94.624447);
+        var myPos3 = new google.maps.LatLng(38.969476,-94.584434);
+        var myPos4 = new google.maps.LatLng(38.917525,-94.530112);
+        var myPos5 = new google.maps.LatLng(38.918485,-94.532053);
+        var myPos6 = new google.maps.LatLng(38.980121,-94.49557);
+        mapOptions = {
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: myPos
+        }
+        
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions)
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos,
+          icon: '/assets/images/map-anchor-1.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos2,
+          icon: '/assets/images/map-anchor-2.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos3,
+          icon: '/assets/images/map-anchor-3.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos4,
+          icon: '/assets/images/map-anchor-4.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos5,
+          icon: '/assets/images/map-anchor-5.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos6,
+          icon: '/assets/images/map-anchor-6.png'
+        })
+
+      }
+
+      $('.email').click(function() {
+        var loc = window.location.host
+        window.location="mailto:?&body=http://" + loc + "/property-management/portfolio"
+      });
+    });
+  </script>
+</head>
+
+<body class="page">
+  <div id="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/"><img src="../../assets/images/logo.png" /></a>
+        </div><!-- /.logo -->
+        <nav>
+          <span class="header_link">
+            <b>About ROC|Bridge Partners</b>
+            <div class="dropmenu">
+              <a href="/about-roc-bridge-partners/company-overview">Company Overview</a>
+              <a href="/about-roc-bridge-partners/senior-management">The Team</a>
+              <a href="/about-roc-bridge-partners/service-providers/service">Service Providers</a>
+              <a href="/about-roc-bridge-partners/philanthropy/philanthropy">Philanthropy</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Investment Management</b>
+            <div class="dropmenu">
+              <a href="/investment-management/overview">Overview</a>
+              <a href="/investment-management/mission">Mission</a>
+              <a href="/investment-management/the-opportunity">The Opportunity</a>
+              <a href="/investment-management/case-studies">Case Studies</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Properties</b>
+            <div class="dropmenu">
+              <a href="/property-management/overview">Overview</a>
+              <a href="/property-management/portfolio">Current Portfolio</a>
+              <a href="/property-management/monetized-properties">Monetized Properties</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          
+          <span class="header_link"><a href="/news/news"><b>News & Updates</b></a></span>
+          <span class="header_link"><a href="/about-roc-bridge-partners/contact/contact-us"><b>Contact Us</b></a></span>
+        </nav><!-- /nav -->
+        <a href="/" id="home_link">Home</a>
+        <a href="/investor-login" id="investor_login_link">Investor Login</a>
+
+        <div class="clearfix"></div>
+
+      </div><!-- /.container -->
+    </header>
+
+    <div id="main">
+      <div id="map_page" class="container">
+        <div class="map_column">
+          <div id="map_canvas"></div>
+        </div><!-- /.map_column -->
+        
+        <div class="map_info_column">
+          <ul class="map_info_list">
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-1.png" /></span>
+              <span class="info_col">
+                <h3>Maple Hills / Royal</h3>
+                <p>7000 Crabapple Lane, Kansas City, Missouri 64129</p>
+              </span>
+              <img src="/assets/images/maps/maple-hills.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-2.png" /></span>
+              <span class="info_col">
+                <h3>Barclay Club</h3>
+                <p>3800 NW Barry Road, Kansas City, Missouri 64154</p>
+              </span>
+              <img src="/assets/images/maps/barclay.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-3.png" /></span>
+              <span class="info_col">
+                <h3>Ridge at Chestnut</h3>
+                <p>8701 Chestnut Court, Kansas City, Missouri 64131</p>
+              </span>
+              <img src="/assets/images/maps/ridge-chestnut.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-4.png" /></span>
+              <span class="info_col">
+                <h3>Kings Manor</h3>
+                <p>11420 Colorado Avenue, Kansas City, Missouri 64137</p>
+              </span>
+              <img src="/assets/images/maps/kings-manor.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-5.png" /></span>
+              <span class="info_col">
+                <h3>Kings Quarters</h3>
+                <p>11330 Colorado Avenue, Kansas City, Missouri 64137</p>
+              </span>
+              <img src="/assets/images/maps/kings-quarters.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-6.png" /></span>
+              <span class="info_col">
+                <h3>Park Meadows</h3>
+                <p>7929 Sycamore, Kansas City, Missouri 64138</p>
+              </span>
+              <img src="/assets/images/maps/park-meadows.png" class="map_property"/>
+            </li>
+          </ul>
+        </div><!-- /.map_info_column -->
+        
+        <div class="clearfix"></div>
+      </div><!-- /.container -->
+    </div><!-- /#main -->
+
+    <footer>
+      Copyright&#169;2011. All rights reserved. <a href="/legal" target="_new">Legal</a>
+    </footer>
+  </div><!-- /#wrapper -->
+
+
+
+</body>
+
+</html>
+
+
+
+
+
