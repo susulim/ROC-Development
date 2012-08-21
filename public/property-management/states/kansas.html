@@ -13,7 +13,6 @@
       
       if ($('#map_canvas').length > 0) {
         var myPos = new google.maps.LatLng(39.010948,-95.727911);
-        var myPos2 = new google.maps.LatLng(39.010940,-95.727900);
         mapOptions = {
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -27,14 +26,6 @@
           animation: google.maps.Animation.DROP,
           position: myPos,
           icon: '/assets/images/map-anchor-1.png'
-        })
-        
-        marker = new google.maps.Marker({
-          map:map,
-          draggable:true,
-          animation: google.maps.Animation.DROP,
-          position: myPos2,
-          icon: '/assets/images/map-anchor-2.png'
         })
 
       }
@@ -103,14 +94,6 @@
           <ul class="map_info_list">
             <li>
               <span class="number_col"><img src="/assets/images/map-anchor-1.png" /></span>
-              <span class="info_col">
-                <h3>Oakbrook Terrace Apartments</h3>
-                <p>3211 SW Twilight Court, Topeka, Kansas 66614</p>
-              </span>
-              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
-            </li>
-            <li>
-              <span class="number_col"><img src="/assets/images/map-anchor-2.png" /></span>
               <span class="info_col">
                 <h3>Oakbrook Terrace Apartments</h3>
                 <p>3211 SW Twilight Court, Topeka, Kansas 66614</p>
