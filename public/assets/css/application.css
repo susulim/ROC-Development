@@ -1508,6 +1508,12 @@ ul.map_info_list li:hover img.map_property {
   padding-top: 130px;
 }
 
+td.date {
+  text-transform: uppercase;
+  padding-right: 15px !important;
+  color: #4d4d4d;
+}
+
 @media only screen and (min-width: 35em) {
   
 
