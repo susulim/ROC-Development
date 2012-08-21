@@ -12,11 +12,16 @@
   cursor: pointer;
   z-index: 1;
   background: url(/assets/images/map-anchor.png) no-repeat;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
 }
 
 #map_wrapper .map_anchor:hover {
-  margin-top: 1px;
+  margin-top: 2px;
   z-index: 2;
+  background: url(/assets/images/map-anchor-red.png) no-repeat;
 }
 
 .map_anchor .thumb_caption {
