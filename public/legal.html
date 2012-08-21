@@ -12,6 +12,7 @@
       
       $('header').scrollspy({
         min: $('.legal_wrapper').offset().top - 120,
+        max: 10000,
         onEnter: function(element, position) {
           $('header').addClass('solid');
         },
