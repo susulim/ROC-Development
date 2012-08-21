@@ -267,7 +267,7 @@ header .container {
 
 .logo img {
   display: block;
-  height: 60px;
+  height: 80px;
 }
 
 nav {
@@ -1445,6 +1445,73 @@ a.search_result_link:hover {
   margin-right: 15px;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+/* MAP */
+#map_canvas {
+  width: 600px;
+  height: 500px;
+}
+
+.map_column {
+  width: 600px;
+  float: left;
+}
+
+.map_info_column {
+  width: 300px;
+  float: right;
+}
+
+ul.map_info_list .number_col {
+  width: 40px;
+  vertical-align: top;
+}
+
+ul.map_info_list .info_col {
+  width: 255px;
+  vertical-align: top;
+}
+
+ul.map_info_list h3 {
+  font-size: 18px;
+}
+
+ul.map_info_list p {
+  color: #666;
+  line-height: 1.2em;
+  margin-top: 5px;
+}
+
+ul.map_info_list li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+ul.map_info_list img.map_property {
+  position: absolute;
+  width: 150px;
+  left: -160px;
+  top: 0;
+  display: none;
+}
+
+ul.map_info_list li:hover img.map_property {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#map_page {
+  padding-top: 130px;
+}
+
+td.date {
+  text-transform: uppercase;
+  padding-right: 15px !important;
+  color: #4d4d4d;
 }
 
 @media only screen and (min-width: 35em) {
