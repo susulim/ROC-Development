@@ -1447,6 +1447,30 @@ a.search_result_link:hover {
   margin-top: 10px;
 }
 
+/* MAP */
+#map_canvas {
+  width: 600px;
+  height: 500px;
+}
+
+.map_column {
+  width: 600px;
+  float: left;
+}
+
+.map_info_column {
+  width: 300px;
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+#map_page {
+  padding-top: 130px;
+}
+
 @media only screen and (min-width: 35em) {
   
 
