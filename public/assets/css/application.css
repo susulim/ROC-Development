@@ -1463,6 +1463,26 @@ a.search_result_link:hover {
   float: right;
 }
 
+ul.map_info_list .number_col {
+  width: 20px;
+  vertical-align: top;
+}
+
+ul.map_info_list .info_col {
+  width: 270px;
+  vertical-align: top;
+}
+
+ul.map_info_list p {
+  color: #666;
+  line-height: 1.2em;
+  margin-top: 5px;
+}
+
+ul.map_info_list li {
+  margin-bottom: 15px;
+}
+
 .hidden {
   display: none;
 }
