@@ -128,3 +128,62 @@
   top: 125px;
   left: 325px;
 }
+
+a.map_anchor {
+  display: block;
+}
+
+.map_anchor.washington {
+  top: 15px;
+  left: 65px;
+}
+
+.map_anchor.kansas {
+  top: 145px;
+  left: 240px;
+}
+
+.map_anchor.california {
+  top: 143px;
+  left: 43px;
+}
+
+.map_anchor.texas {
+  top: 236px;
+  left: 230px;
+}
+
+.map_anchor.utah {
+  top: 128px;
+  left: 120px;
+}
+
+.map_anchor.colorado {
+  top: 135px;
+  left: 174px;
+}
+
+.map_anchor.new_mexico {
+  top: 188px;
+  left: 165px;
+}
+
+.map_anchor.arizona {
+  top: 185px;
+  left: 110px;
+}
+
+.map_anchor.nebraska {
+  top: 102px;
+  left: 225px;
+}
+
+.map_anchor.illinois {
+  top: 125px;
+  left: 323px;
+}
+
+.map_anchor.missouri {
+  top: 144px;
+  left: 293px;
+}
