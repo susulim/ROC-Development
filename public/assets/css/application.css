@@ -1464,13 +1464,17 @@ a.search_result_link:hover {
 }
 
 ul.map_info_list .number_col {
-  width: 20px;
+  width: 40px;
   vertical-align: top;
 }
 
 ul.map_info_list .info_col {
-  width: 270px;
+  width: 255px;
   vertical-align: top;
+}
+
+ul.map_info_list h3 {
+  font-size: 18px;
 }
 
 ul.map_info_list p {
@@ -1481,6 +1485,19 @@ ul.map_info_list p {
 
 ul.map_info_list li {
   margin-bottom: 15px;
+  position: relative;
+}
+
+ul.map_info_list img.map_property {
+  position: absolute;
+  width: 150px;
+  left: -160px;
+  top: 0;
+  display: none;
+}
+
+ul.map_info_list li:hover img.map_property {
+  display: block;
 }
 
 .hidden {
