@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROC | Bridge Partner</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/application.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/map.css" />
+  <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+      if ($('#map_canvas').length > 0) {
+        var myPos = new google.maps.LatLng(39.846435,-105.049756);
+        var myPos2 = new google.maps.LatLng(39.826731,-105.073586);
+        var myPos3 = new google.maps.LatLng(39.827954,-105.080395);
+        var myPos4 = new google.maps.LatLng(39.782389,-104.846899);
+        var myPos5 = new google.maps.LatLng(39.659633,-104.854544);
+        var myPos6 = new google.maps.LatLng(39.832521,-105.001929);
+        var myPos7 = new google.maps.LatLng(39.704306,-104.935691);
+        var myPos8 = new google.maps.LatLng(39.741364,-104.981969);
+        var myPos9 = new google.maps.LatLng(39.713595,-104.849488);
+        var myPos10 = new google.maps.LatLng(39.714647,-104.819303);
+        var myPos11 = new google.maps.LatLng(38.821996,-104.750704);
+        var myPos12 = new google.maps.LatLng(38.773726,-104.812188);
+        mapOptions = {
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: myPos
+        }
+        
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions)
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos,
+          icon: '/assets/images/map-anchor-1.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos2,
+          icon: '/assets/images/map-anchor-2.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos3,
+          icon: '/assets/images/map-anchor-3.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos4,
+          icon: '/assets/images/map-anchor-4.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos5,
+          icon: '/assets/images/map-anchor-5.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos6,
+          icon: '/assets/images/map-anchor-6.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos7,
+          icon: '/assets/images/map-anchor-7.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos8,
+          icon: '/assets/images/map-anchor-8.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos9,
+          icon: '/assets/images/map-anchor-9.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos10,
+          icon: '/assets/images/map-anchor-10.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos11,
+          icon: '/assets/images/map-anchor-11.png'
+        })
+
+        marker = new google.maps.Marker({
+          map:map,
+          draggable:true,
+          animation: google.maps.Animation.DROP,
+          position: myPos12,
+          icon: '/assets/images/map-anchor-12.png'
+        })
+      }
+
+      $('.email').click(function() {
+        var loc = window.location.host
+        window.location="mailto:?&body=http://" + loc + "/property-management/portfolio"
+      });
+    });
+  </script>
+</head>
+
+<body class="page">
+  <div id="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/"><img src="../../assets/images/logo.png" /></a>
+        </div><!-- /.logo -->
+        <nav>
+          <span class="header_link">
+            <b>About ROC|Bridge Partners</b>
+            <div class="dropmenu">
+              <a href="/about-roc-bridge-partners/company-overview">Company Overview</a>
+              <a href="/about-roc-bridge-partners/senior-management">The Team</a>
+              <a href="/about-roc-bridge-partners/service-providers/service">Service Providers</a>
+              <a href="/about-roc-bridge-partners/philanthropy/philanthropy">Philanthropy</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Investment Management</b>
+            <div class="dropmenu">
+              <a href="/investment-management/overview">Overview</a>
+              <a href="/investment-management/mission">Mission</a>
+              <a href="/investment-management/the-opportunity">The Opportunity</a>
+              <a href="/investment-management/case-studies">Case Studies</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          <span class="header_link">
+            <b>Properties</b>
+            <div class="dropmenu">
+              <a href="/property-management/overview">Overview</a>
+              <a href="/property-management/portfolio">Current Portfolio</a>
+              <a href="/property-management/monetized-properties">Monetized Properties</a>
+            </div><!-- /.dropmenu -->
+          </span>
+          
+          <span class="header_link"><a href="/news/news"><b>News & Updates</b></a></span>
+          <span class="header_link"><a href="/about-roc-bridge-partners/contact/contact-us"><b>Contact Us</b></a></span>
+        </nav><!-- /nav -->
+        <a href="/" id="home_link">Home</a>
+        <a href="/investor-login" id="investor_login_link">Investor Login</a>
+
+        <div class="clearfix"></div>
+
+      </div><!-- /.container -->
+    </header>
+
+    <div id="main">
+      <div id="map_page" class="container">
+        <div class="map_column">
+          <div id="map_canvas"></div>
+        </div><!-- /.map_column -->
+        
+        <div class="map_info_column">
+          <ul class="map_info_list">
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-1.png" /></span>
+              <span class="info_col">
+                <h3>Sandpiper</h3>
+                <p>8200 N. Sheridan Blvd, Westminster, Colorado 80003</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-2.png" /></span>
+              <span class="info_col">
+                <h3>Arvada Village</h3>
+                <p>5839 Pierce Street, Arvada Green, Colorado 80003</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-3.png" /></span>
+              <span class="info_col">
+                <h3>Arvada Green</h3>
+                <p>7569 West 72nd Avenue, Arvada Green, Colorado 80003</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-4.png" /></span>
+              <span class="info_col">
+                <h3>Villages at Gateway</h3>
+                <p>12175 Albrook Drive, Denver, Colorado 80239</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-5.png" /></span>
+              <span class="info_col">
+                <h3>One Dartmouth Place</h3>
+                <p>11100 East Dartmouth Avenue, Denver, Colorado 80014</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-6.png" /></span>
+              <span class="info_col">
+                <h3>Briarwood North</h3>
+                <p>7398 Dakin Street, Denver, Colorado 80221</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-7.png" /></span>
+              <span class="info_col">
+                <h3>Cherry Creek</h3>
+                <p>4500 Cherry Creek S Dr, Denver, Colorado 80246</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-8.png" /></span>
+              <span class="info_col">
+                <h3>Logan Tower</h3>
+                <p>1580 Logan Street, Denver, Colorado 80203</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-9.png" /></span>
+              <span class="info_col">
+                <h3>Chelsea Park Village</h3>
+                <p>11850 E. Maple Avenue, Aurora, Colorado 80012</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-10.png" /></span>
+              <span class="info_col">
+                <h3>Promenade at Towne</h3>
+                <p>100 S Sable BLVD., Aurora, Colorado 80012</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-11.png" /></span>
+              <span class="info_col">
+                <h3>Windmill</h3>
+                <p>4165 Lacy Lane, Colorado Springs, Colorado 80916</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+            <li>
+              <span class="number_col"><img src="/assets/images/map-anchor-12.png" /></span>
+              <span class="info_col">
+                <h3>Cheyenne Crest</h3>
+                <p>4008 Westmeadow, Colorado Springs, Colorado 80906</p>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+              </span>
+              <img src="/assets/images/maps/oakbrook.png" class="map_property"/>
+            </li>
+          </ul>
+        </div><!-- /.map_info_column -->
+        
+        <div class="clearfix"></div>
+      </div><!-- /.container -->
+    </div><!-- /#main -->
+
+    <footer>
+      Copyright&#169;2011. All rights reserved. <a href="/legal" target="_new">Legal</a>
+    </footer>
+  </div><!-- /#wrapper -->
+
+
+
+</body>
+
+</html>
+
+
+
+
