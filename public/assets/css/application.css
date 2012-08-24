@@ -1086,8 +1086,8 @@ a.banner_link img.full {
 }
 
 .portfolio_image_thumbnails img {
-  width: 192px;
-  height: 120px;
+  width: 100px;
+  height: 60px;
   margin-bottom: 4px;
 }
 
