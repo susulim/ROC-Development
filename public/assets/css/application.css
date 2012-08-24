@@ -237,7 +237,6 @@ ul.home_slider_pagination li:hover a img {
 
 header {
   position: fixed;
-  font-family: helvetica neue, arial, sans-serif;
   width: 100%;
   top: 0;
   left: 0;
@@ -281,7 +280,7 @@ nav {
   display: block;
   top: 0;
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   height: 30px;
   text-align: center;
@@ -296,18 +295,18 @@ nav {
   left: -10px;
   background: url(../images/home-button.png) no-repeat;
   width: 90px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 #investor_login_link {
   left: 80px;
   background: url(../images/login-button.png) no-repeat;
   width: 165px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 span.header_link, span.header_link > a {
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   padding-bottom: 6px;
   padding-right: 10px;
@@ -1494,6 +1493,9 @@ ul.map_info_list img.map_property {
   left: -160px;
   top: 0;
   display: none;
+  padding: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 #999;
 }
 
 ul.map_info_list li:hover img.map_property {
@@ -1511,9 +1513,25 @@ ul.map_info_list li:hover img.map_property {
 td.date {
   text-transform: uppercase;
   padding-right: 15px !important;
-  color: #4d4d4d;
+  color: #666;
+  font-size: 11px;
+  vertical-align: middle;
 }
 
+td.news_title {
+  padding: 10px 0;
+}
+
+td.news_title a {
+  display: block;
+  line-height: 1.1em;
+  color: #000;
+}
+
+td.news_title a:last-child {
+  color: #036;
+  margin-top: 4px;
+}
 @media only screen and (min-width: 35em) {
   
 
