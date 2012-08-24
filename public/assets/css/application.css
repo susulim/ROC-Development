@@ -74,7 +74,7 @@ body, #wrapper {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-weight: 600;
+  font-size: 15px;
   font-family: times, georgia, serif;
 }
 
@@ -383,8 +383,11 @@ span.header_link:hover .dropmenu {
   margin: 10px 0;
 }
 
+.info_cage p {
+  font-size: 13px;
+}
+
 .info_cage p, .legal_wrapper p {
-  font-size: 12px;
   line-height: 1.3em;
   text-align: justify;
   color: #31363A;
@@ -544,19 +547,19 @@ table {
 }
 
 table.team_list {
-  font-size: 12px;
-  font-family: times, georgia, serif;
 }
 
 table.team_list th {
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 10px;
 }
 
 table.team_list td {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-right: 15px;
+  padding-left: 10px;
 }
 
 table.team_list a img {
@@ -1086,8 +1089,8 @@ a.banner_link img.full {
 }
 
 .portfolio_image_thumbnails img {
-  width: 192px;
-  height: 120px;
+  width: 100px;
+  height: 60px;
   margin-bottom: 4px;
 }
 
@@ -1235,9 +1238,23 @@ table.asset_summary td {
   vertical-align: middle;
 }
 
+table.asset_summary td.property_name {
+  vertical-align: top;
+  font-size: 10px;
+  padding-right: 6px !important;
+}
+
+table.asset_summary td.property_name p {
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
 table.asset_summary td.label_col {
   width: 60px;
   font-size: 9px;
+  font-weight: bold;
   line-height: 1.2em;
 }
 
