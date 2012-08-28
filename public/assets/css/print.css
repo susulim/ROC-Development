@@ -542,24 +542,19 @@ article {
 
 table {
   width: 100%;
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
-table.team_list {
-}
-
 table.team_list th {
-  padding-top: 4px;
+  padding-top: 25px;
   padding-bottom: 4px;
-  padding-left: 10px;
 }
 
 table.team_list td {
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   padding-right: 15px;
-  padding-left: 10px;
 }
 
 table.team_list a img {
@@ -1550,10 +1545,6 @@ td.news_title a:last-child {
   margin-top: 4px;
 }
 
-img.print_logo {
-  display: none;
-}
-
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
 .hidden { display: none !important; visibility: hidden; }
@@ -1564,3 +1555,17 @@ img.print_logo {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
+
+
+* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+a, a:visited { text-decoration: none; font-weight: bold; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } 
+tr, img { page-break-inside: avoid; }
+img { max-width: 100% !important; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+p { font-size: 18px !important; line-height: 1.5em !important; }
