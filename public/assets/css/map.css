@@ -154,8 +154,11 @@ a.map_anchor {
 }
 
 .map_anchor.texas {
-  top: 236px;
-  left: 230px;
+  width: 131px;
+  height: 129px;
+  background: url(/assets/images/map-anchor/tx.png) no-repeat;
+  top: 194px;
+  left: 168px;
 }
 
 .map_anchor.utah {
@@ -180,6 +183,7 @@ a.map_anchor {
   background: url(/assets/images/map-anchor/nm.png) no-repeat;
   top: 184px;
   left: 142px;
+  z-index: 3 !important;
 }
 
 .map_anchor.arizona {
