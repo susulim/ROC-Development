@@ -208,8 +208,11 @@ a.map_anchor {
 }
 
 .map_anchor.illinois {
-  top: 125px;
-  left: 323px;
+  width: 39px;
+  height: 66px;
+  background: url(/assets/images/map-anchor/il.png) no-repeat;
+  top: 122px;
+  left: 313px;
 }
 
 .map_anchor.missouri {
