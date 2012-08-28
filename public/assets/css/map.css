@@ -146,6 +146,7 @@ a.map_anchor {
   background: url(/assets/images/map-anchor/ks.png) no-repeat;
   top: 153px;
   left: 217px;
+  z-index: 4 !important;
 }
 
 .map_anchor.california {
@@ -212,6 +213,10 @@ a.map_anchor {
 }
 
 .map_anchor.missouri {
-  top: 144px;
-  left: 293px;
+  width: 63px;
+  height: 53px;
+  background: url(/assets/images/map-anchor/mo.png) no-repeat;
+  top: 148px;
+  left: 276px;
+  z-index: 3 !important;
 }
