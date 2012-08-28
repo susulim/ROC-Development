@@ -167,8 +167,11 @@ a.map_anchor {
 }
 
 .map_anchor.colorado {
-  top: 135px;
-  left: 174px;
+  width: 68px;
+  height: 54px;
+  background: url(/assets/images/map-anchor/co.png) no-repeat;
+  top: 137px;
+  left: 152px;
 }
 
 .map_anchor.new_mexico {
