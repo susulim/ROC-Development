@@ -9,7 +9,7 @@
   position: absolute;
   cursor: pointer;
   z-index: 1;
-  opacity: 0.2;
+  opacity: 0;
   -webkit-transition: opacity 0.1s;
   -moz-transition: opacity 0.1s;
   -o-transition: opacity 0.1s;
@@ -136,8 +136,11 @@ a.map_anchor {
 }
 
 .map_anchor.washington {
-  top: 15px;
-  left: 65px;
+  width: 63px;
+  height: 47px;
+  background: url(/assets/images/map-anchor/wa.png) no-repeat;
+  top: 19px;
+  left: 46px;
 }
 
 .map_anchor.kansas {
