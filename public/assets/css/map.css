@@ -6,22 +6,19 @@
 }
 
 #map_wrapper .map_anchor {
-  width: 24px;
-  height: 32px;
   position: absolute;
   cursor: pointer;
   z-index: 1;
-  background: url(/assets/images/map-anchor.png) no-repeat;
-  -webkit-transition: background 0.1s;
-  -moz-transition: background 0.1s;
-  -o-transition: background 0.1s;
-  transition: background 0.1s;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 #map_wrapper .map_anchor:hover {
-  margin-top: 2px;
   z-index: 2;
-  background: url(/assets/images/map-anchor-red.png) no-repeat;
+  opacity: 1;
 }
 
 .map_anchor .thumb_caption {
@@ -174,8 +171,11 @@ a.map_anchor {
 }
 
 .map_anchor.arizona {
-  top: 185px;
-  left: 110px;
+  width: 64px;
+  height: 73px;
+  background: url(/assets/images/map-anchor/az.png) no-repeat;
+  top: 176px;
+  left: 88px;
 }
 
 .map_anchor.nebraska {
