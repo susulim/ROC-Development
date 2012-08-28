@@ -9,7 +9,7 @@
   position: absolute;
   cursor: pointer;
   z-index: 1;
-  opacity: 0;
+  opacity: 0.2;
   -webkit-transition: opacity 0.1s;
   -moz-transition: opacity 0.1s;
   -o-transition: opacity 0.1s;
@@ -146,8 +146,11 @@ a.map_anchor {
 }
 
 .map_anchor.california {
-  top: 143px;
-  left: 43px;
+  width: 75px;
+  height: 129px;
+  background: url(/assets/images/map-anchor/ca.png) no-repeat;
+  top: 96px;
+  left: 24px;
 }
 
 .map_anchor.texas {
@@ -156,8 +159,11 @@ a.map_anchor {
 }
 
 .map_anchor.utah {
-  top: 128px;
-  left: 120px;
+  width: 52px;
+  height: 66px;
+  background: url(/assets/images/map-anchor/ut.png) no-repeat;
+  top: 118px;
+  left: 106px;
 }
 
 .map_anchor.colorado {
