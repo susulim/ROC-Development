@@ -141,8 +141,11 @@ a.map_anchor {
 }
 
 .map_anchor.kansas {
-  top: 145px;
-  left: 240px;
+  width: 70px;
+  height: 38px;
+  background: url(/assets/images/map-anchor/ks.png) no-repeat;
+  top: 153px;
+  left: 217px;
 }
 
 .map_anchor.california {
