@@ -178,6 +178,7 @@ a.map_anchor {
   background: url(/assets/images/map-anchor/co.png) no-repeat;
   top: 137px;
   left: 152px;
+  z-index: 3 !important;
 }
 
 .map_anchor.new_mexico {
@@ -198,8 +199,11 @@ a.map_anchor {
 }
 
 .map_anchor.nebraska {
-  top: 102px;
-  left: 225px;
+  width: 77px;
+  height: 41px;
+  background: url(/assets/images/map-anchor/ne.png) no-repeat;
+  top: 116px;
+  left: 203px;
 }
 
 .map_anchor.illinois {
