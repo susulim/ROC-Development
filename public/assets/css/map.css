@@ -175,8 +175,11 @@ a.map_anchor {
 }
 
 .map_anchor.new_mexico {
-  top: 188px;
-  left: 165px;
+  width: 66px;
+  height: 67px;
+  background: url(/assets/images/map-anchor/nm.png) no-repeat;
+  top: 184px;
+  left: 142px;
 }
 
 .map_anchor.arizona {
