@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
   <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="../assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="../assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -25,6 +27,11 @@
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/investment-management/overview"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+      
     });
   </script>
 </head>
@@ -100,6 +107,7 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
               <h1>Overview</h1>
               <p>ROC|Bridge Partners, LLC (&#8220;ROC|Bridge&#8221;), is a registered investment advisory firm whose principals have a 21 year track record of success in the multifamily and commercial office real estate sectors. We purchase real property and real estate backed loans at attractive valuations, build significant value through internal and affiliated operational expertise, and exit such investments once the improvements have been put in place.  Our real estate investment and operating expertise, coupled with the opportunities afforded by current conditions in the U.S. real estate market, have created strong returns for our partners and investors.</p>
@@ -110,7 +118,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../../about-roc-bridge-partners/contact/contact-us">Contact Us</a></li>
             </ul>

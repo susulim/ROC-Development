@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
   <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -25,6 +27,11 @@
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/property-management/monetized-properties"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+      
     });
   </script>
 </head>
@@ -99,6 +106,7 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
               <h1>Monetized Properties</h1>
               <p>ROC|Bridge has a predetermined holding period of between 3 &#8211; 4 years for its properties. Below are some of the properties which we have recently monetized.</p>
@@ -107,10 +115,10 @@
               <table class="team_list">
                 <thead>
                   <tr class="label_row">
-                    <th class="type-string">Property</th>
-                    <th class="type-string one_per_five">City</th>
-                    <th class="type-string one_per_five">Stat</th>
-                    <th class="type-string one_per_five">Units</th>
+                    <th class="type-string size_specified">Property</th>
+                    <th class="type-string width_modified">City</th>
+                    <th class="type-string state_width">Stat</th>
+                    <th class="type-string">Units</th>
                   </tr><!-- /.label_row -->
                 </thead>
                 
@@ -138,9 +146,9 @@
                 <thead>
                   <tr class="label_row">
                     <th class="type-string">Property</th>
-                    <th class="type-string one_per_five">City</th>
-                    <th class="type-string one_per_five">Stat</th>
-                    <th class="type-string one_per_five">Square Feet</th>
+                    <th class="type-string">City</th>
+                    <th class="type-string">Stat</th>
+                    <th class="type-string">Square Feet</th>
                   </tr><!-- /.label_row -->
                 </thead>
                 
@@ -166,7 +174,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../../about-roc-bridge-partners/contact/contact-us">Contact Us</a></li>
             </ul>

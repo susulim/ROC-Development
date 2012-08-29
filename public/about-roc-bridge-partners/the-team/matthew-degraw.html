@@ -2,16 +2,24 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
-  <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
-  <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
+  <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('.email').click(function() {
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/the-team/matthew-degraw"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+
     });
   </script>
 </head>
@@ -90,6 +98,7 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
               <h1 class="team">The Team</h1>
               <div class="individual">
@@ -116,7 +125,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../contact/contact-us">Contact Us</a></li>
             </ul>
