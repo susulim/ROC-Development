@@ -972,39 +972,20 @@ a.banner_link img.full {
   color: black;
 }
 
-.philanthropy_logo_cage {
-  text-align: justify;
-}
-
 .philanthropy_logo_cage a {
+  display: block;
   margin-bottom: 20px;
-}
-
-.philanthropy_logo_cage a.rotary img {
-  height: 100px;
-  margin-right: 20px;
-}
-
-.philanthropy_logo_cage a.hale_centre img {
-  margin-left: 50px;
-}
-
-.philanthropy_logo_cage a.living_planet img {
-  height: 120px;
-  margin-top: 10px;
-}
-
-.philanthropy_logo_cage a.nw img,
-.philanthropy_logo_cage a.project_access img {
-  height: 70px;
-  margin-right: 20px;
-  margin-top: 10px;
+  text-decoration: none !important;
 }
 
 /* service-providers */
 .services img {
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+.service_cage a {
+  text-decoration: none !important;
 }
 
 /* contact us */
@@ -1019,14 +1000,13 @@ a.banner_link img.full {
 }
 
 .office_box h4 {
-  font-size: 14px;
+  font-size: 21px;
   font-weight: bold;
-  font-family: times, times new roman,serif;
+  font-family: times, times new roman, serif;
   margin-bottom: 5px;
 }
 
 .office_box p, .person_box p {
-  font-size: 13px;
   margin: 0;
   text-align: left;
 }
@@ -1034,6 +1014,10 @@ a.banner_link img.full {
 .person_box {
   margin-top: 10px;
   margin-bottom:15px;
+}
+
+.person_box p a, .office_box p a {
+  display: none;
 }
 
 .office_box { 

@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
   <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="/assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -25,6 +27,11 @@
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/c-overview/bsai"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+      
     });
   </script>
 </head>
@@ -83,7 +90,7 @@
           <img src="../../assets/images/banner-1.png" />
           <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
-      </div></!-- /#page_banner -->
+      </div><!-- /#page_banner -->
 
       <div class="container page_content">
         <div class="page_header">ABOUT ROC|BRIDGE PARTNERS</div><!-- /.page_title -->
@@ -104,6 +111,7 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
               <h1>Bridge Stabilized Apartment Investments, LLC ("BSAI")</h1></a>
               <p>Bridge Stabilized Apartment Investments is the group&rsquo;s joint venture platform.  Featuring an investment history that spans over 21 years, BSAI acquires stabilized cash-flowing multifamily rental properties in partnership with a select group of institutional equity partners. Its primary business is to identify, analyze and evaluate stabilized apartment investments that offer opportunities to add value through physical renovation, marketing/management enhancement and/or recurring expense rationalization.</p>
@@ -114,7 +122,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../contact/contact-us">Contact Us</a></li>
             </ul>
