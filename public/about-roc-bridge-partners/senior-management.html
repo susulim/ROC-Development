@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../assets/css/application.css" />
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
   <script type="text/javascript" src="../../assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/slides.js"></script>
@@ -10,6 +11,7 @@
   <script type="text/javascript" src="../../assets/javascripts/application.js"></script>
   <script type="text/javascript" src="../../assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -28,6 +30,11 @@
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/senior-management"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+      
     });
   </script>
 </head>
@@ -106,6 +113,7 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
               <h1>Senior Management</h1>
               <p>Our principals have an average of 21 years&rsquo; experience and have extensive experience in all facets of real estate investment, financing, development, management and operations, spanning all major assets classes including multifamily apartment and condominium, hotel, industrial, office, single-family residential retail and storage.</p>
@@ -246,7 +254,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="contact/contact-us">Contact Us</a></li>
             </ul>
