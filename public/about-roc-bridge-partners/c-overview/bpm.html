@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>ROC | Bridge Partners</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/application.css" />
+  <link href="/assets/css/application.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/assets/css/print.css" rel="stylesheet" media="print" type="text/css" />
   <script type="text/javascript" src="/assets/javascripts/modernizr-2.5.3.min.js"></script>
   <script type="text/javascript" src="/assets/javascripts/jquery.js"></script>
   <script type="text/javascript" src="/assets/javascripts/scrollspy.js"></script>
   <script type="text/javascript" src="/assets/javascripts/search.js"></script>
+  <script type="text/javascript" src="/assets/javascripts/printarea.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
 
@@ -25,6 +27,11 @@
         var loc = window.location.host
         window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/c-overview/bpm"
       });
+      
+      $("#print_button").click(function(){
+        $("article").printArea();
+      });
+      
     });
   </script>
 </head>
@@ -83,7 +90,7 @@
           <img src="../../assets/images/banner-1.png" />
           <div id="page_search_cage"><input type="text" id="home_search_input" placeholder="Search" /></div>
         </div>
-      </div></!-- /#page_banner -->
+      </div><!-- /#page_banner -->
 
       <div class="container page_content">
         <div class="page_header">ABOUT ROC|BRIDGE PARTNERS</div><!-- /.page_title -->
@@ -104,8 +111,9 @@
           </aside>
 
           <article>
+            <img src="/assets/images/print-logo.png" class="print_logo" />
             <div class="content_wrapper">
-              <a href="http://www.bridgepm.com/"><h1>Bridge Property Management, LLC ("BPM") </h1></a>
+              <a href="http://www.bridgepm.com/" target="_new"><h1>Bridge Property Management, LLC ("BPM") </h1></a>
               <p>Bridge Property Management, LLC is the group&#8217;s in-house property management arm with 21 years of operating history. BPM manages over 16,500 multifamily apartment units and over 1.5 million square feet of commercial office space. It manages (i) most of the properties owned by ROC|Bridge&#8217;s privately held real estate investment vehicles, and (ii) properties owned by other funds, institutional capital aggregators and individual investors.</p>
               <p>BPM employs over 500 real estate professionals, in over 40 unique sub-markets across the U.S.  This includes 54 property managers and 120 leasing agents, and over 320 on-site personnel providing property maintenance and operations.</p>
               <p>The network is well versed within their respective local markets, allowing ROC|Bridge to provide objective assessments of potential investment opportunities and local intelligence (such as leasing activity, sub-market occupancy, valuation, employment, demographic trends, local redevelopment initiatives, capital improvement needs, and physical security issues).</p>
@@ -114,7 +122,7 @@
 
           <aside id="right_sidebar">
             <ul class="action_list">
-              <li class="print"><a href="#" onclick="javascript:window.print();">Print This Page</a></li>
+              <li class="print"><a id="print_button">Print This Page</a></li>
               <li class="email"><a href="#">Email This Page</a></li>
               <li class="contact"><a href="../contact/contact-us">Contact Us</a></li>
             </ul>

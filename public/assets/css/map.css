@@ -6,22 +6,19 @@
 }
 
 #map_wrapper .map_anchor {
-  width: 24px;
-  height: 32px;
   position: absolute;
   cursor: pointer;
   z-index: 1;
-  background: url(/assets/images/map-anchor.png) no-repeat;
-  -webkit-transition: background 0.1s;
-  -moz-transition: background 0.1s;
-  -o-transition: background 0.1s;
-  transition: background 0.1s;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 #map_wrapper .map_anchor:hover {
-  margin-top: 2px;
   z-index: 2;
-  background: url(/assets/images/map-anchor-red.png) no-repeat;
+  opacity: 1;
 }
 
 .map_anchor .thumb_caption {
@@ -139,56 +136,93 @@ a.map_anchor {
 }
 
 .map_anchor.washington {
-  top: 15px;
-  left: 65px;
+  width: 63px;
+  height: 47px;
+  background: url(/assets/images/map-anchor/wa.png) no-repeat;
+  top: 19px;
+  left: 46px;
 }
 
 .map_anchor.kansas {
-  top: 145px;
-  left: 240px;
+  width: 70px;
+  height: 38px;
+  background: url(/assets/images/map-anchor/ks.png) no-repeat;
+  top: 153px;
+  left: 217px;
+  z-index: 4 !important;
 }
 
 .map_anchor.california {
-  top: 143px;
-  left: 43px;
+  width: 75px;
+  height: 129px;
+  background: url(/assets/images/map-anchor/ca.png) no-repeat;
+  top: 96px;
+  left: 24px;
 }
 
 .map_anchor.texas {
-  top: 236px;
-  left: 230px;
+  width: 131px;
+  height: 129px;
+  background: url(/assets/images/map-anchor/tx.png) no-repeat;
+  top: 194px;
+  left: 168px;
 }
 
 .map_anchor.utah {
-  top: 128px;
-  left: 120px;
+  width: 52px;
+  height: 66px;
+  background: url(/assets/images/map-anchor/ut.png) no-repeat;
+  top: 118px;
+  left: 106px;
 }
 
 .map_anchor.colorado {
-  top: 135px;
-  left: 174px;
+  width: 68px;
+  height: 54px;
+  background: url(/assets/images/map-anchor/co.png) no-repeat;
+  top: 137px;
+  left: 152px;
+  z-index: 3 !important;
 }
 
 .map_anchor.new_mexico {
-  top: 188px;
-  left: 165px;
+  width: 66px;
+  height: 67px;
+  background: url(/assets/images/map-anchor/nm.png) no-repeat;
+  top: 184px;
+  left: 142px;
+  z-index: 3 !important;
 }
 
 .map_anchor.arizona {
-  top: 185px;
-  left: 110px;
+  width: 64px;
+  height: 73px;
+  background: url(/assets/images/map-anchor/az.png) no-repeat;
+  top: 176px;
+  left: 88px;
 }
 
 .map_anchor.nebraska {
-  top: 102px;
-  left: 225px;
+  width: 77px;
+  height: 41px;
+  background: url(/assets/images/map-anchor/ne.png) no-repeat;
+  top: 116px;
+  left: 203px;
 }
 
 .map_anchor.illinois {
-  top: 125px;
-  left: 323px;
+  width: 39px;
+  height: 66px;
+  background: url(/assets/images/map-anchor/il.png) no-repeat;
+  top: 122px;
+  left: 313px;
 }
 
 .map_anchor.missouri {
-  top: 144px;
-  left: 293px;
+  width: 63px;
+  height: 53px;
+  background: url(/assets/images/map-anchor/mo.png) no-repeat;
+  top: 148px;
+  left: 276px;
+  z-index: 3 !important;
 }
