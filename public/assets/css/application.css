@@ -576,14 +576,6 @@ table.team_list a:hover img {
   text-align: left;
 }
 
-.label_row .size_specified {
-  width: 208px;
-}
-
-.label_row .width_modified {
-  width: 115px;
-}
-
 .odd {
   background-color: #f2f2f2;
 }
@@ -779,6 +771,10 @@ ul .inner_list {
 
 .team_list th {
   cursor: pointer;
+}
+
+.team_list th.one_per_five {
+  width: 20%;
 }
 
 .team_list tr:hover td.relative_cage .portfolio_thumb {
