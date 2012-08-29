@@ -7,7 +7,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { margin: 0; font-size: 13px; line-height: 1.4; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -74,8 +74,8 @@ body, #wrapper {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 15px;
-  font-family: times, georgia, serif;
+  font-size: 16px;
+  font-family: georgia, times, serif;
 }
 
 .container {
@@ -191,7 +191,6 @@ img.slide_image {
 }
 
 #home_slider .caption h1 {
-  font-family: times, times new roman, serif;
   color: #fff;
   text-shadow: 0 1px #03151E;
   opacity: 0.9;
@@ -378,7 +377,6 @@ span.header_link:hover .dropmenu {
 
 .info_cage h2, .legal_wrapper h2 {
   font-size: 18px;
-  font-family: times, times new roman, serif;
   color: #003B76;
   margin: 10px 0;
 }
@@ -598,7 +596,6 @@ table.team_list a:hover img {
 
 #left_sidebar a {
   display: block;
-  font-family: times, georgia, serif;
   text-decoration: none;
   color: #666;
   font-size: 16px;
@@ -633,7 +630,6 @@ table.team_list a:hover img {
 
 article h1, .legal_wrapper h1 {
   font-size: 21px;
-  font-family: times, georgia, serif;
   margin-bottom: 10px;
 }
 
@@ -647,8 +643,6 @@ article a:hover {
 }
 
 article p, ul.news_list {
-  font-size: 15px;
-  font-family: times, georgia, serif;
   margin-bottom: 10px;
   color: #4d4d4d;
   text-align: justify;
@@ -658,7 +652,6 @@ ul.action_list {
   padding: 15px;
   font-size: 13px;
   letter-spacing: 1px;
-  font-family: times, georgia, serif;
   color: #fff;
 }
 
@@ -751,7 +744,6 @@ ul.action_list li a:hover {
 .bio_list li {
   font-size: 15px;
   color: #4d4d4d;
-  font-family: times, georgia, serif;
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -1034,7 +1026,6 @@ a.banner_link img.full {
 .office_box h4 {
   font-size: 14px;
   font-weight: bold;
-  font-family: times, times new roman,serif;
   margin-bottom: 5px;
 }
 
@@ -1137,10 +1128,6 @@ a.banner_link img.full {
   border-radius: 3px;
 }
 
-.summary_list li {
-  font-family: times, georgia, serif !important;
-}
-
 
 /* Case Studies */
 
@@ -1164,7 +1151,6 @@ ul.studies_list li img {
 
 ul.studies_list li .title {
   color: #2d2d2d;
-  font-family: times, times new roman, serif;
   font-weight: bold;
   font-size: 15px;
 }
@@ -1200,7 +1186,6 @@ ul.studies_list li a:hover .learn_more {
 }
 
 .content_wrapper .location_map {
-  font-family: times, georgia, serif;
   font-size: 13px;
   padding-left: 10px;
   color: #551AAE;
@@ -1269,7 +1254,6 @@ table.asset_summary td.label_col {
 ul.summary_list {
   color: #4d4d4d;
   margin-bottom: 25px;
-  font-family: times, georgia, serif;
 }
 
 ul.summary_list li {
