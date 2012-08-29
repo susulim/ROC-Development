@@ -577,11 +577,15 @@ table.team_list a:hover img {
 }
 
 .label_row .size_specified {
-  width: 208px;
+  width: 192px;
 }
 
 .label_row .width_modified {
-  width: 115px;
+  width: 107px;
+}
+
+.label_row .state_width {
+  width: 89px;
 }
 
 .odd {
