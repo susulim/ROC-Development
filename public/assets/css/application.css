@@ -1558,9 +1558,10 @@ td.news_title a:last-child {
   margin-top: 4px;
 }
 
-img.print_logo {
+img.print_logo, img.print_map {
   display: none;
 }
+
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }

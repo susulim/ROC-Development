@@ -800,6 +800,10 @@ ul .inner_list {
   margin-top: -45px;
 }
 
+.team_list th.one_per_five {
+  width: 20%;
+}
+
 /* service-providers page */
 
 ul.services li {
@@ -972,39 +976,20 @@ a.banner_link img.full {
   color: black;
 }
 
-.philanthropy_logo_cage {
-  text-align: justify;
-}
-
 .philanthropy_logo_cage a {
+  display: block;
   margin-bottom: 20px;
-}
-
-.philanthropy_logo_cage a.rotary img {
-  height: 100px;
-  margin-right: 20px;
-}
-
-.philanthropy_logo_cage a.hale_centre img {
-  margin-left: 50px;
-}
-
-.philanthropy_logo_cage a.living_planet img {
-  height: 120px;
-  margin-top: 10px;
-}
-
-.philanthropy_logo_cage a.nw img,
-.philanthropy_logo_cage a.project_access img {
-  height: 70px;
-  margin-right: 20px;
-  margin-top: 10px;
+  text-decoration: none !important;
 }
 
 /* service-providers */
 .services img {
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+.service_cage a {
+  text-decoration: none !important;
 }
 
 /* contact us */
@@ -1019,14 +1004,13 @@ a.banner_link img.full {
 }
 
 .office_box h4 {
-  font-size: 14px;
+  font-size: 21px;
   font-weight: bold;
-  font-family: times, times new roman,serif;
+  font-family: times, times new roman, serif;
   margin-bottom: 5px;
 }
 
 .office_box p, .person_box p {
-  font-size: 13px;
   margin: 0;
   text-align: left;
 }
@@ -1034,6 +1018,10 @@ a.banner_link img.full {
 .person_box {
   margin-top: 10px;
   margin-bottom:15px;
+}
+
+.person_box p a, .office_box p a {
+  display: none;
 }
 
 .office_box { 
@@ -1213,8 +1201,12 @@ table.case_info_table td.label_column {
   color: #565656;
 }
 
+a.location_map {
+  display: none;
+}
+
 table.asset_summary {
-  font-size: 11px;
+  font-size: 13px;
   color: #4D4D4D;
   margin-bottom: 15px;
 }
@@ -1235,13 +1227,13 @@ table.asset_summary td {
 
 table.asset_summary td.property_name {
   vertical-align: top;
-  font-size: 10px;
+  font-size: 13px;
   padding-right: 6px !important;
 }
 
 table.asset_summary td.property_name p {
   text-decoration: underline;
-  font-size: 12px;
+  font-size: 15px !important;
   font-weight: bold;
   margin-bottom: 2px;
 }
@@ -1544,6 +1536,7 @@ td.news_title a:last-child {
   color: #036;
   margin-top: 4px;
 }
+
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
