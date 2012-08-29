@@ -800,6 +800,10 @@ ul .inner_list {
   margin-top: -45px;
 }
 
+.team_list th.one_per_five {
+  width: 20%;
+}
+
 /* service-providers page */
 
 ul.services li {
@@ -1197,8 +1201,12 @@ table.case_info_table td.label_column {
   color: #565656;
 }
 
+a.location_map {
+  display: none;
+}
+
 table.asset_summary {
-  font-size: 11px;
+  font-size: 13px;
   color: #4D4D4D;
   margin-bottom: 15px;
 }
@@ -1219,13 +1227,13 @@ table.asset_summary td {
 
 table.asset_summary td.property_name {
   vertical-align: top;
-  font-size: 10px;
+  font-size: 13px;
   padding-right: 6px !important;
 }
 
 table.asset_summary td.property_name p {
   text-decoration: underline;
-  font-size: 12px;
+  font-size: 15px !important;
   font-weight: bold;
   margin-bottom: 2px;
 }
@@ -1528,6 +1536,7 @@ td.news_title a:last-child {
   color: #036;
   margin-top: 4px;
 }
+
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
