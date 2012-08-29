@@ -576,21 +576,18 @@ table.team_list a:hover img {
   text-align: left;
 }
 
-<<<<<<< HEAD
 .label_row .size_specified {
-  width: 192px;
+  width: 199px;
 }
 
 .label_row .width_modified {
-  width: 107px;
+  width: 100px;
 }
 
 .label_row .state_width {
   width: 89px;
 }
 
-=======
->>>>>>> d27598651e85fc4ea1fe4fc519d5e62b0b5a9825
 .odd {
   background-color: #f2f2f2;
 }
