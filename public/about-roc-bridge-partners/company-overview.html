@@ -22,12 +22,7 @@
           $('header').removeClass('solid');
         }
       });
-      
-      $('.email').click(function() {
-        var loc = window.location.host
-        window.location="mailto:?&body=http://" + loc + "/about-roc-bridge-partners/company-overview"
-      });
-      
+
       $("#print_button").click(function(){
         $("article").printArea();
       });
@@ -122,7 +117,7 @@
           <aside id="right_sidebar">
             <ul class="action_list">
               <li class="print"><a id="print_button">Print This Page</a></li>
-              <li class="email"><a href="#">Email This Page</a></li>
+              <li class="email"><a href="mailto:?body=http://roc-development.herokuapp.com/about-roc-bridge-partners/company-overview">Email This Page</a></li>
               <li class="contact"><a href="contact/contact-us">Contact Us</a></li>
             </ul>
           </aside>
