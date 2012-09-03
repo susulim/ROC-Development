@@ -775,6 +775,7 @@ ul .inner_list {
 
 .team_list th {
   cursor: pointer;
+  text-align: left;
 }
 
 .team_list th.one_per_five {
