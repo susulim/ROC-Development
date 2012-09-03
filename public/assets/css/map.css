@@ -21,6 +21,10 @@
   opacity: 1;
 }
 
+#map_wrapper .map_anchor {
+  background: none !important;
+}
+
 .map_anchor .thumb_caption {
   width: 150px;
   height: 100px;
@@ -76,61 +80,6 @@
   opacity: 0.95;
 }
 
-.map_anchor.seatle {
-  top: 6px;
-  left: 57px;
-}
-
-.map_anchor.fresno {
-  top: 148px;
-  left: 50px;
-}
-
-.map_anchor.salt_lake {
-  top: 108px;
-  left: 115px;
-}
-
-.map_anchor.casa_grande {
-  top: 200px;
-  left: 106px;
-}
-
-.map_anchor.tucson {
-  top: 210px;
-  left: 122px;
-}
-
-.map_anchor.albuquerque {
-  top: 178px;
-  left: 160px;
-}
-
-.map_anchor.denver {
-  top: 127px;
-  left: 186px;
-}
-
-.map_anchor.dallas {
-  top: 218px;
-  left: 253px;
-}
-
-.map_anchor.houston {
-  top: 251px;
-  left: 267px;
-}
-
-.map_anchor.topeka {
-  top: 138px;
-  left: 260px;
-}
-
-.map_anchor.bloomington {
-  top: 125px;
-  left: 325px;
-}
-
 a.map_anchor {
   display: block;
 }
@@ -138,7 +87,6 @@ a.map_anchor {
 .map_anchor.washington {
   width: 63px;
   height: 47px;
-  background: url(/assets/images/map-anchor/wa.png) no-repeat;
   top: 19px;
   left: 46px;
 }
@@ -146,7 +94,6 @@ a.map_anchor {
 .map_anchor.kansas {
   width: 70px;
   height: 38px;
-  background: url(/assets/images/map-anchor/ks.png) no-repeat;
   top: 153px;
   left: 217px;
   z-index: 4 !important;
@@ -155,7 +102,6 @@ a.map_anchor {
 .map_anchor.california {
   width: 75px;
   height: 129px;
-  background: url(/assets/images/map-anchor/ca.png) no-repeat;
   top: 96px;
   left: 24px;
 }
@@ -163,7 +109,6 @@ a.map_anchor {
 .map_anchor.texas {
   width: 131px;
   height: 129px;
-  background: url(/assets/images/map-anchor/tx.png) no-repeat;
   top: 194px;
   left: 168px;
 }
@@ -171,7 +116,6 @@ a.map_anchor {
 .map_anchor.utah {
   width: 52px;
   height: 66px;
-  background: url(/assets/images/map-anchor/ut.png) no-repeat;
   top: 118px;
   left: 106px;
 }
@@ -179,7 +123,6 @@ a.map_anchor {
 .map_anchor.colorado {
   width: 68px;
   height: 54px;
-  background: url(/assets/images/map-anchor/co.png) no-repeat;
   top: 137px;
   left: 152px;
   z-index: 3 !important;
@@ -188,7 +131,6 @@ a.map_anchor {
 .map_anchor.new_mexico {
   width: 66px;
   height: 67px;
-  background: url(/assets/images/map-anchor/nm.png) no-repeat;
   top: 184px;
   left: 142px;
   z-index: 3 !important;
@@ -197,7 +139,6 @@ a.map_anchor {
 .map_anchor.arizona {
   width: 64px;
   height: 73px;
-  background: url(/assets/images/map-anchor/az.png) no-repeat;
   top: 176px;
   left: 88px;
 }
@@ -205,7 +146,6 @@ a.map_anchor {
 .map_anchor.nebraska {
   width: 77px;
   height: 41px;
-  background: url(/assets/images/map-anchor/ne.png) no-repeat;
   top: 116px;
   left: 203px;
 }
@@ -213,7 +153,6 @@ a.map_anchor {
 .map_anchor.illinois {
   width: 39px;
   height: 66px;
-  background: url(/assets/images/map-anchor/il.png) no-repeat;
   top: 122px;
   left: 313px;
 }
@@ -221,8 +160,51 @@ a.map_anchor {
 .map_anchor.missouri {
   width: 63px;
   height: 53px;
-  background: url(/assets/images/map-anchor/mo.png) no-repeat;
   top: 148px;
   left: 276px;
   z-index: 3 !important;
+}
+
+#map_wrapper .map_anchor.washington:hover {
+  background: url(/assets/images/map-anchor/wa.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.kansas:hover {
+  background: url(/assets/images/map-anchor/ks.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.california:hover {
+  background: url(/assets/images/map-anchor/ca.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.texas:hover {
+  background: url(/assets/images/map-anchor/tx.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.utah:hover {
+  background: url(/assets/images/map-anchor/ut.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.colorado:hover {
+  background: url(/assets/images/map-anchor/co.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.new_mexico:hover {
+  background: url(/assets/images/map-anchor/nm.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.arizona:hover {
+  background: url(/assets/images/map-anchor/az.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.nebraska:hover {
+  background: url(/assets/images/map-anchor/ne.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.illinois:hover {
+  background: url(/assets/images/map-anchor/il.png) no-repeat !important;
+}
+
+#map_wrapper .map_anchor.missouri:hover {
+  background: url(/assets/images/map-anchor/mo.png) no-repeat !important;
 }
