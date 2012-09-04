@@ -127,11 +127,17 @@
           icon: '/assets/images/map-anchor-12.png'
         })
       }
-
-      $('.email').click(function() {
-        var loc = window.location.host
-        window.location="mailto:?&body=http://" + loc + "/property-management/portfolio"
+      
+      $('body').click(function() {
+        $('.header_link.expanded').removeClass('expanded');
       });
+            
+      $('.header_link').click(function(e) {
+        e.stopPropagation();
+        $('.header_link.expanded').removeClass('expanded');
+        $(this).toggleClass('expanded');
+      });
+
     });
   </script>
 </head>

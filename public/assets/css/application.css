@@ -335,7 +335,8 @@ span.header_link > a:hover {
   box-shadow: 0 1px 4px 0 #868686;
 }
 
-span.header_link:hover .dropmenu {
+span.header_link:hover .dropmenu,
+span.header_link.expanded .dropmenu {
   display: block;
 }
 

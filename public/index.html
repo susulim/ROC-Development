@@ -9,6 +9,21 @@
   <script type="text/javascript" src="assets/javascripts/slides.js"></script>
   <script type="text/javascript" src="assets/javascripts/application.js"></script>
   <script type="text/javascript" src="assets/javascripts/search.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+      $('body').click(function() {
+        $('.header_link.expanded').removeClass('expanded');
+      });
+            
+      $('.header_link').click(function(e) {
+        e.stopPropagation();
+        $('.header_link.expanded').removeClass('expanded');
+        $(this).toggleClass('expanded');
+      });
+      
+    });
+  </script>
 </head>
 
 <body>
